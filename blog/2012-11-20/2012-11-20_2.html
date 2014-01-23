@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="IBM WebSphere Studio Homepage Builder Version 12.0.5.0 for Windows">
+<META http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<META http-equiv="Content-Style-Type" content="text/css">
+<TITLE>Windows Media Player Plugin インストール及び動作確認</TITLE>
+</HEAD>
+<BODY>
+<P><IMG src="../../banner.jpg" width="828" height="84" border="0"></P>
+<TABLE border="0" cellpadding="0" cellspacing="0" id="_HPB_LINK_MENU_TABLE_121117160018" class="hpb-hmenu1">
+  <TBODY>
+    <TR align="center">
+      
+<TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../../index.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">TOP </A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../00_blog_index.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">weblog</A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../../lib/lib.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">TIPS</A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../../myworks/myworks.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">Works</A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../../link.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">リンク</A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT face="メイリオ" size="+2"><A href="http://lefty-uncle.sakura.ne.jp/lightbord/light.cgi" target="_blank"><FONT size="+3"/FONT></A></FONT></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<TABLE border="1" width="820" height="1112">
+  <TBODY>
+    <TR>
+      <TD width="631" valign="top" ><FONT face="メイリオ">2012-11-20 プログラム作成リハビリです<BR>
+      <BR>
+      ピアノ演奏初級、中級者向けに主にクラッシック・ピアノ曲の楽譜と模範演奏、曲の解説を沢山収録したウェブページがあります。<BR>
+      「<A href="http://piano1001.sakura.ne.jp/" target="_blank">piano1001</A>」<BR>
+      このウェブサイトを作成された方はプロのピアニストですが、すでに亡くなられています。<BR>
+      亡くなられて暫くして、残念ながらサイトは閉鎖となりました、素晴らしいサイトでファンも沢山いらっしゃたのですが...<BR>
+      なんとか再開できないものかと、私、一人、ブログで大騒ぎしておりましたら、それをご覧になったある方が、ご遺族の方（以降、管理人代理さまと表記します）とお知り合いで（先生のお弟子さん）、たまたま関西圏にお住まいで、その方を紹介して頂いたのです。<BR>
+      ウェブサイトは、さくらインターネットのレンタルサーバーを中心にされていましたが、ディスクスペースが足りず海外のフリーのディスクスペースを５～６サイト利用した構造となっていました。<BR>
+      <BR>
+      管理人代理さまはサイトの存続を強くご希望されていたのですが、パソコンに詳しい方がおられず、さくらインターネット(株)への年間契約が切れてしまいサイトが閉鎖されてしまったのです。<BR>
+      見ず知らずで全くの他人である「僕」を信用して頂き、管理人代理として「piano1001」の復活と維持・管理を任せて頂く事となったのでございます。<BR>
+      それでウェブサイトを再開することになったのですが、ソースファイル(htmファイル、PDFファイル(楽譜)、オーディオファイル、midiファイル(模範演奏)など）が完全にそろってなかったんです。<BR>
+      あったのは、私が個人的にダウンロードしたさくらのレンタルサーバーだけに置いてあったファイルと、生前、先生が作成された配布用のWindows用CD-ROM版のファイルだけです。<BR>
+      これが前置きです、長くてすみません。<BR>
+      <BR>
+      さて、<A href="http://support.sakura.ad.jp/manual/rs/tech_server.html" target="_blank">さくらインターネットのレンタルサーバーのOS</A>は「FreeBSD」、すなわちUNIXなんですね。<BR>
+      サイトの復旧はWindowsで作成された、もともとのウェブサイトとはまったく形が違う、CD-ROM版から復旧しました。<BR>
+      要するにですね、UNIX上のソースファイルとWindowsのソースファイルをごちゃにしてサイトを再構築したんです。<BR>
+      <BR>
+      で、結局何が言いたいかというとですね、ご存じのとおりUNIXはファイル名の大文字、小文字を区別し、Windowsは区別しないのでUNIXのウェブサイトでリンク切れが多数あるというのが入院中に分かったのです。<BR>
+      <BR>
+      ということで、パソコン操作のリハビリとして、久しぶりにプログラムを作成しています。<BR>
+      Microsoft VisualStudio C# 2012 Express と SQLServer2005 Express を使っています。<BR>
+      題して「リンク切れチェックプログラム」。<BR>
+      sample.html が 「C:\site」にあるとして、<BR>
+      &lt;A href=&quot;AUDIO/Haydn_sonata_34_2.wma&quot;&gt;<BR>
+      つまり、「C:\site\AUDIO\Haydn_sonata_34_2.wma」が、フォルダ、ファイル名含め大文字、小文字が完全に一致してファイルが存在するか、存在するけど、大文字、小文字の構成が違う、をチェックするプログラムです。<BR>
+      どうってことないプログラムだけど、結構めんどうなのです、だってｈｔｍｌてフリースタイルですし、複数行文字列も考慮しないといけないし。<BR>
+      フリーソフト探したけど、ファイル名を大文字、小文字に変換するソフトばっかでリンクチェックするソフト見つかりませんでした。<BR>
+      数が少なけりゃ手作業でチェックするけど、リンク数が約１５００あるんです。<BR>
+      こりゃ、プログラムでやっつけるしかない！<BR>
+      ・起点となるディレクトリを指定し、<BR>
+      ・拡張子を指定し、<BR>
+      ・チェックする拡張子（PDF,WMA,MP3,MID)を指定し<BR>
+      ・ｈｔｍｌファイルを一行ごとに読み込んで<BR>
+      ・&lt;A href=を見つけて<BR>
+      ・複数行にわたってもディレクトリ+ファイル名の文字列を取り出し<BR>
+      ・フォルダとファイル名を分解し<BR>
+      ・存在チェックし<BR>
+      ・ファイルがないか、大文字小文字違いで存在するかをチェックして<BR>
+      その結果、htmlファイル名と何行目か、ファイルが無いのか、大文字小文字違いか<BR>
+      をテキストファイルに出力するプログラムです。<BR>
+      ああ、めんどおくさい、でも大事なリハビリなので頑張ります。<BR>
+      コーディングは５割ほど完了してまして、一日１０時間程度取り組んでいます。<BR>
+      今週中に何とかしたいなぁ。<BR>
+      複視が相当よくなってきて、プログラム開発のやる気が出てきました。<BR>
+      プログラム開発は、僕の中ではパソコン操作の中で一番、目と頭と手（指）を酷使する作業なので、これが完了すれば復職に一歩近づくと思っております。<BR>
+      <BR>
+      <BR>
+      </FONT></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</BODY>
+</HTML>

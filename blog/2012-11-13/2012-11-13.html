@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="IBM WebSphere Studio Homepage Builder Version 12.0.5.0 for Windows">
+<META http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<META http-equiv="Content-Style-Type" content="text/css">
+<TITLE>Windows Media Player Plugin インストール及び動作確認</TITLE>
+</HEAD>
+<BODY>
+<P align="center"><IMG src="../../banner.jpg" width="828" height="84" border="0"></P>
+<CENTER>
+<TABLE border="0" cellpadding="0" cellspacing="0" id="_HPB_LINK_MENU_TABLE_121117160018" class="hpb-hmenu1">
+  <TBODY>
+    <TR align="center">
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../../index.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">TOP </A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../00_blog_index.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">weblog</A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../../lib/lib.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">TIPS</A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../../myworks/myworks.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">Works</A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../../link.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">リンク</A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT face="メイリオ" size="+2"><A href="http://lefty-uncle.sakura.ne.jp/lightbord/light.cgi" target="_blank"><FONT size="+3"/FONT></A></FONT></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</CENTER>
+<CENTER>
+<TABLE border="1">
+  <TBODY>
+    <TR>
+      <TD valign="top" width="820" height="1232"><FONT face="メイリオ">2012-11-13 Windows Media Audio でストリーミング配信のウェブページを作ったららこうなった<BR>
+      <BR>
+      「ストリーミング再生」は基本的に「動画」が対象で、音声のみのストリーミングは「Real」ですかね。<BR>
+      ストリーミングと言えば、もっぱら「flv」か「mp4」ですね。<BR>
+      「Real」なんて最近滅多に見かけません、プレイヤー等々、最近はインストールしていない人も多いのでは？<BR>
+      私もその一人です。<BR>
+      レンタルしている「<A href="http://www.sakura.ne.jp/#rental" target="_blank">さくらインターネット</A>」は容量が「１GB」しかないため「ストリーミング動画」をアップするいには絶対的に容量が小さすぎて無理なんです。<BR>
+      で、ちょいと調べてみるとWindows Media Audioでもストリーミング出来るんですね。<BR>
+      ストリーミング用のファイル変換も「Windows Media エンコーダ x64 Edition」で簡単にできます。<BR>
+      ＩＥ１０で実験してみたらすんなり成功、リンクをクリックしたらすぐにWindows Media Playerが起動して再生が始まります。<BR>
+      ですが、FireFox、Chermeではストリーミング再生してくれません、ダウンロードしに行っちゃいます。<BR>
+      確認したバージョンは、FireFox「16.0.2」、Cherme「バージョン 23.0.1271.64 m」<BR>
+      Windows8ではプラグインをインストールしたら両方とも解決しました。<BR>
+      尚、Cherme用のプラグインはまだ準備されていないようです、ダウンロードできません。<BR>
+      <BR>
+      ＜訂正＞<BR>
+      Cherme用のWindows Media Player Pluginはリリースされています。<BR>
+      詳しくは「<A href="../../lib/streem_test/streem_setup.html#2" target="_self">備忘録 Windows Media Player Plugin ダウンロードとインストール</A>」をご覧ください。<BR>
+      ＜/訂正＞<BR>
+      <BR>
+      この２つのブラウザのストリーミング再生、ちょっと便利悪い。<BR>
+      プレイヤーが起動するんじゃなくて、新しいタブが生成されて波形動画が表示されます。<BR>
+      <IFRAME width="420" height="315" src="http://www.youtube.com/embed/QWCGc3QbVWE" frameborder="0" allowfullscreen></IFRAME>
+      <BR>
+      <BR>
+      同じバージョンのブラウザでも、WindowsXP(Pro SP3)では、異なる動きをします。<BR>
+      Windows Media Playerは「１１」をダウンロードしてインストールしました。<BR>
+      FireFox用のプラグインもインストール済です。<BR>
+      WindowsXPの場合はWindow Media Player11が起動されます。<BR>
+      <IFRAME width="420" height="315" src="http://www.youtube.com/embed/AnFqQjqZP1A" frameborder="0" allowfullscreen></IFRAME>
+      <BR>
+      <BR>
+      伊豆の音楽師匠の環境（XP＋FireFox）ではストリーミング再生がなかなかうまく行かないみたいで手こずってます。<BR>
+      でもVMWareでWindowsXPインストールしたらMedia Player 9 で何もせんでもストリーミング再生するし、相変わらずWindowsは困ったもののです。<BR>
+      <BR>
+      <BR>
+      </FONT></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</CENTER>
+</BODY>
+</HTML>

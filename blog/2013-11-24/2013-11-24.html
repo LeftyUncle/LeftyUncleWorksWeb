@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="IBM WebSphere Studio Homepage Builder Version 12.0.5.0 for Windows">
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<META http-equiv="Content-Style-Type" content="text/css">
+<TITLE>ブログ</TITLE>
+</HEAD>
+<BODY>
+<P align="center"><IMG src="../2012-12-29/banner.jpg" width="832" height="84" border="0"></P>
+<CENTER>
+<TABLE border="0" cellpadding="0" cellspacing="0" id="_HPB_LINK_MENU_TABLE_121117160018" class="hpb-hmenu1">
+  <TBODY>
+    <TR align="center">
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../../index.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">TOP </A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../00_blog_index.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">weblog</A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../../lib/lib.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">TIPS</A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../../myworks/myworks.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">Works</A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../../link.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">リンク</A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</CENTER>
+<CENTER>
+<TABLE border="1">
+  <TBODY>
+    <TR>
+      <TD width="819"  valign="top"><FONT color="#000000" face="メイリオ">2013-11-24 Windows 8.1 に AutoCAD 2006 - Japanese インストール覚書<BR>
+      <A href="http://leftyunclememorandum.wordpress.com/" target="_self"><BR>
+      </A>CD-ROM内の「setup.exe」では.NETFramework 1.1のインストールでエラーが発生します。<BR>
+      </FONT>
+      <TABLE border="1">
+        <TBODY>
+          <TR>
+            <TD width="796"><FONT face="メイリオ" size="-1">[11/24/2013 15:19:19] === Installation started on KINCHAN by rinfa ===<BR>
+            [11/24/2013 15:19:28] [Info] Windows Installer upgrade is not required<BR>
+            [11/24/2013 15:19:28]   System Version = 5.0.9600.16384<BR>
+            [11/24/2013 15:19:28] Installation skipped: MSI Runtime 3.0<BR>
+            [11/24/2013 15:19:28] [Info] .NET Framework Runtime upgrade is not required<BR>
+            [11/24/2013 15:19:28]   System Version = 6.3.9600.16384<BR>
+            [11/24/2013 15:19:28] Installation skipped: .NET Framework Runtime 1.1<BR>
+            [11/24/2013 15:19:28] Installation skipped: .NET Framework Runtime 1.1
+            Language Pack can't be installed on Windows 64-bit<BR>
+            [11/24/2013 15:19:28] Installation aborted<BR>
+            [11/24/2013 15:19:37] === Installation ended ===</FONT><FONT size="-1"><BR>
+            </FONT></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      <FONT color="#000000" face="メイリオ"><BR>
+      「<A href="http://ja.wikipedia.org/wiki/.NET_Framework" target="_blank">.NETFramework 1.1とはなんぞや？</A>」（ドットネットフレームワーク）<BR>
+      深く知る必要はないけれど、AutoCadの様にインストールを迫られる場合があるので概念くらいは知っておいた方が良いかもね？<BR>
+      Microsoft製品も例外ではなく、Office2007からは「.NET Framework」を先にインストールしないと製品のインストールは出来ません。<BR>
+      大抵の場合は製品のインストーラーが「.NET Framework」のインストールの有無とバージョンの確認を行い、インストールされていなければ（Microsoftのダウンロードセンターからダウンロードして）インストールします。<BR>
+      <BR>
+      この行為を行うのがAutoCadの「Setup.exe」ですが、おそらくWindowsXPとWindows8で互換性のない方法で「.NET Framework」のインストーラーを起動しようとしてエラーなったと予想されます。<BR>
+      AutoCadの実質的なインストーラーは、実は「setup.exe」ではなくて<BR>
+      「CD-ROM\\AutoCAD2006 (D)\Bin\acadFeui」の中にある「acad.msi」がインストーラーです。<BR>
+      ですので、以下の手順でインストールできます。<BR>
+      １．NET Framework Runtime 1.1 を Microsoftダウインロードセンターからダウンロードして手動でインストールする。<BR>
+      ２．NET Framework Runtime 1.1 Language<FONT color="#000000" face="メイリオ"> Pack をMicrosoftダウインロードセンターからダウンロードして手動でインストールする。<BR>
+      </FONT>３．acad.msi を起動して AutoCad をインストールする。<BR>
+      ちなみに「.msi」拡張子は「Microsoft Windows Installer」の略です。<BR>
+      <BR>
+      NET Framework Runtime 1.1 は Windows8.1 で正常に動作するので、AutoCad 2006 も動作すると思います。<BR>
+      但し、T家に譲ったPCはメインメモリがPC-1333の１GB×２＝２GBしかありません。<BR>
+      ６４bitOSはメインメモリが４GB以上でないと進化を発揮しません。<BR>
+      逆に２GB程度だとWindowsカーネルのメモリ利用率が高くなり、ユーザーで利用できるメモリが少なくなって逆に遅く感じてしまうかもしれません。<BR>
+      最悪、ヒープ領域が不足してAutoCadが異常終了するかもしれません。<BR>
+      出来れば重い図面を開いて操作感や図面を修正するなどして、正常に動作するかどうかを十分に検証する必要があります。<BR>
+      これはVectorWorksにおいても同じです。<BR>
+      補足しますと「Windows7の方が互換性が高い、動いた、、安心」と言うのはWindows７の32bit版OSの事であり、<BR>
+      Windows７であっても６４bit版OSを使う場合はWindows8（若しくは8.1）と同じ気遣いが必要でしょう。<BR>
+      <BR>
+      <BR>
+      </FONT><FONT color="#000000" face="メイリオ" size="-2"><BR>
+      <BR>
+      以上<BR>
+      <BR>
+      </FONT></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</CENTER>
+</BODY>
+</HTML>

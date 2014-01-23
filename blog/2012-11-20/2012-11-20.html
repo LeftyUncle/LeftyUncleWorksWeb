@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="IBM WebSphere Studio Homepage Builder Version 12.0.5.0 for Windows">
+<META http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<META http-equiv="Content-Style-Type" content="text/css">
+<TITLE>Windows Media Player Plugin インストール及び動作確認</TITLE>
+</HEAD>
+<BODY>
+<P><IMG src="../../banner.jpg" width="831" height="84" border="0"></P>
+<TABLE border="0" cellpadding="0" cellspacing="0" id="_HPB_LINK_MENU_TABLE_121117160018" class="hpb-hmenu1">
+  <TBODY>
+    <TR align="center">
+      
+<TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../../index.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">TOP </A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../00_blog_index.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">weblog</A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../../lib/lib.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">TIPS</A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../../myworks/myworks.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">Works</A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../../link.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">リンク</A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT face="メイリオ" size="+2"><A href="http://lefty-uncle.sakura.ne.jp/lightbord/light.cgi" target="_blank"><FONT size="+3"/FONT></A></FONT></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<TABLE border="1">
+  <TBODY>
+    <TR>
+      <TD valign="top" width="813" height="981"><FONT face="メイリオ">2012-12-20 64bit Windows8専用ドライバじゃないとインストール出来ない仕掛け<BR>
+      <BR>
+      ちゃんと調べないでWi-Fi USB子機を買ったもんで、ドライバインストール時に以下のようなエラーで怒られ、インストールできません、いまだに使えないです。<BR>
+      ドライバに「ハッシュ」って全然意味が分からなかったし、こんなエラー初めて見たので調べてみました、勉強しないとね。<BR>
+      <IMG src="image1.jpg" width="482" height="372" border="0"><BR>
+      <BR>
+      すぐに見つかるもんですね。<BR>
+      「<A href="http://www.atmarkit.co.jp/fwin2k/special/win64_04/win64_04_01.html" target="_blank">64bit Windows時代到来 デジタル署名が必須の64bitデバイス・ドライバ(2010/09/09)</A>」<BR>
+      WDFモデルのカーネル・モードで動作するデバイス・ドライバにはデジタル署名が必須で、ＣＡＴファイルに付けられているデジタル署名のハッシュ値を持っていて、インストール時にハッシュの値がチェックされると言うことらしいです。<BR>
+      解説として、WDFモデルではカーネル側には必要最小限の機能だけを置き、必ずしもカーネル・モードで処理する必要のない機能はユーザー・モードで実装することができる。<BR>
+例えばネットワーク・インターフェイス・カードの場合なら、データを読み書きしたり、割り込みなどを処理したりするドライバは高速性／リアルタイム性が求められるのでカーネル・モードに置くが、上位のプロトコル処理（TCP/IPやBluetooth、FireWireなど）はユーザー・モードで処理しても構わない。<BR>
+ユーザー・モード側に置けば、たとえ不具合が発生しても終了するのはそのプロセスだけであり（ユーザー・モードではプロセス空間は独立している）、ほかのプロセスやカーネル・コードが巻き込まれてクラッシュする可能性が低くなる。<BR>
+カーネル・モードとユーザー・モードの分離モデルを採用することにより、システム全体の信頼性を高くできる。<BR>
+      フンフン、まっとうな考え方じゃん、分かるよ。<BR>
+      ドイヒー(酷い)なドライバーもあって、サウンドカード最大手の「ク○○○ヴ」の製品を以前購入した事があるのですけど、こいつのドライバが、とんでもなくバグが多く、いろんなブログで報告されていて、これまたちゃんと調べずに購入して、あるホストプログラムと組み合わせてＳＭＦを再生するとブルーパニックする経験があります。<BR>
+      速攻、８割安でオークションで売っちゃいましたけど。<BR>
+      <BR>
+      （余談）<BR>
+      PLANEXの「<A href="http://www.planex.co.jp/product/wireless/gw-ushyper300/" target="_blank">GW-USHyper300</A>」のドライバファイルを見ると「net8192su」ってなっていて、INFファイルを開くと<BR>
+      Realtek RTL8192S Wireless USB 2.0 Network Adapter<BR>
+      である事がわかります。<BR>
+      本家のウェブサイトを見ても、まだ、Windows8用のドライバはリリースされていないようです。<BR>
+      ハッシュなんて入社２～３年目の時の「SAPS-20」のルックアップファイル作成時の「ハッシュ値」以来、耳にしていなかった。<BR>
+      イングレスのファイル構造で「ハッシュ」つーのがあったような気がします、そう言えば。<BR>
+      古い話です。<BR>
+      <BR>
+      <BR>
+      </FONT></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</BODY>
+</HTML>

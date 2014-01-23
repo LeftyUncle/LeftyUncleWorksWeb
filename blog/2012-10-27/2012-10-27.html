@@ -1,0 +1,206 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="IBM WebSphere Studio Homepage Builder Version 12.0.5.0 for Windows">
+<META http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<META http-equiv="Content-Style-Type" content="text/css">
+<TITLE>ブログ</TITLE>
+</HEAD>
+<BODY>
+<P align="center"><IMG src="../../banner.jpg" width="894" height="84" border="0"></P>
+<CENTER>
+<TABLE border="0" cellpadding="0" cellspacing="0" id="_HPB_LINK_MENU_TABLE_121117160018" class="hpb-hmenu1">
+  <TBODY>
+    <TR align="center">
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../../index.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">TOP </A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../00_blog_index.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">weblog</A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../../lib/lib.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">TIPS</A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../../myworks/myworks.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">Works</A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../../link.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">リンク</A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT face="メイリオ" size="+2"><A href="http://lefty-uncle.sakura.ne.jp/lightbord/light.cgi" target="_blank"><FONT size="+3"/FONT></A></FONT></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</CENTER>
+<CENTER>
+<TABLE border="1">
+  <TBODY>
+    <TR>
+      <TD width="878" height="5866" valign="top"><B><FONT size="+1" face="メイリオ">2012-10-27 SoundFontとVSTiを同時に鳴らせて音源の要らないmidiプレーヤー 「SynthFont」</FONT></B><FONT size="+1" face="メイリオ"> <BR>
+      <BR>
+      面倒な設定無しで「SoundFont」と「VSTi」を同時に鳴らせちゃう「<A href="http://www.synthfont.com/" target="_blank">SynthFont</A>」。<BR>
+      いろんなサイトでさんざん解説されていますので概要だけ。<BR>
+      「SoundFont」でピアノを鳴らし、VSTiでリバーブをかけます、もちろん「VSTi」でピアノを鳴らしVSTiでリバーブをかけることもできます。<BR>
+      <BR>
+      「SynthFont」の特徴<BR>
+      先に書いたけどなんも設定しないてSoundFontとVSTiを両方鳴らせっちゃう。<BR>
+      midi再生音をリダイレクトでuavやmp3に出力出来る、しかもwavvやmp3が選べて、時短出力機能がある。<BR>
+      これは珍しい機能で、初めて見ました、ありがたい機能です。<BR>
+      GM,GS以外のSoundFontを選んでいるとリバーブとコーラスのイベントを（あえて？）無視する。<BR>
+      <BR>
+      簡単ですが使い方。<BR>
+      <BR>
+      １．「SoundFont」の指定<BR>
+      <IMG src="01.jpg" width="465" height="229" border="0"><BR>
+      <BR>
+      [Sound File Mamager]をクリックしてください。<BR>
+      途中で表示されるメッセージボックスは読めばわかるので省略します。<BR>
+      <IMG src="04_.jpg" width="467" height="540" border="0"><BR>
+      <BR>
+      [add]をクリックしてSoundFontファイルが格納されているフォルダを指定してください。<BR>
+      僕の場合は「C:\TOOL\SOUNDFONT」に全部ファイルを突っ込んでいるので上のような状態になります。<BR>
+      <BR>
+      ２．VSTi（リバーブ）の指定<BR>
+      <IMG src="05.jpg" width="404" height="152" border="0"><BR>
+      <BR>
+      [Add Fx] [Manage VST Effects]　をクリックすると[Manaage]ダイアログが開くので[add]ボタンでVSTの入っているフォルダーを指定してください。<BR>
+      <IMG src="image3.jpg" width="399" height="469" border="0"><BR>
+      <BR>
+      僕の場合「C:\TOOL\SOUNDFONT\VSTi_Effecter」にあるのでそれを指定します。<BR>
+      <IMG src="image4.jpg" width="398" height="319" border="0"><BR>
+      <BR>
+      読めばわかるよね、[Yes]をクリック。<BR>
+      <IMG src="image5.jpg" width="290" height="115" border="0"><BR>
+      <BR>
+      で、使いたいVSTをShiftキーを押しながら複数選択して[all]にチェックを入れて[add to chain] [OK]を押すとメインウィンドウにエフェクターがついかされます。<BR>
+      <IMG src="image8.jpg" width="379" height="445" border="0"><BR>
+      <BR>
+      チェックが入っているエフェクターが有効になるのですが、こいつらは全部リバーブなので、まあ、普通はどれか一つだけ選択します。<BR>
+      名前をダブルクリックするとコントロールのダイアログが表示されます。<BR>
+      <IMG src="image9.jpg" width="377" height="110" border="0"><BR>
+      <BR>
+      ３．ＶＳＴｉのリバーブ<BR>
+      ＭＩＤＩのリバーブよりオーディオ信号にリバーブをかけるので、圧倒的に音がよく、各パラメータも自由に設定できる。<BR>
+      プリセットが多く用意されているものもあり便利。<BR>
+      椎津の師匠みたいにこのへんの事情に詳しい方はおそらくお気に入りのリバーブとオリジナルのプリセットを持っているはず、今度教えていただこうと思います。<BR>
+      で、下のYouTubeはpiano1001先生演奏のショパン「英雄」でVSTiのリバーブを色々と試してみました。<BR>
+      使用したのは[epicVerb」というリバーブです。<BR>
+      <BR>
+      <A href="https://www.youtube.com/watch?v=BYN27ttbTUI" target="_blank">piano1001先生演奏のショパン「「英雄」　先生がすぐそこで演奏しているように聞こえるリバーブもあるよ。</A><BR>
+      <IFRAME width="420" height="315" src="http://www.youtube.com/embed/BYN27ttbTUI" frameborder="0" allowfullscreen></IFRAME>
+      <BR>
+      <BR>
+      パネルのデザインもかっこいい。<BR>
+      <IMG src="image1.jpg" width="417" height="134" border="0"><BR>
+      <BR>
+      あとは、こんなのがあります。<BR>
+      <IMG src="image.jpg" width="418" height="203" border="0"><BR>
+      <BR>
+      <IMG src="image2.jpg" width="419" height="318" border="0"><BR>
+      <BR>
+      以下が僕の所有するピアノのＳｏｕｎｄＦｏｎｔです。<BR>
+      やみくもに、片っ端からダウンロードしたのです素性もわかっていません、数字はファイルサイズ（MB）。<BR>
+      興味があればファイル名から情報ゲットしてみてください。<BR>
+      結局は好みになります。<BR>
+      僕は、これだけ持っていても、結局使うのは「clavinovapiano1v2.0.sf2」か「splendid_136.sf2」のどっちか。<BR>
+      残念ながら「clavinovapiano1v2.0.sf2」は入手不可見たいです、いい音なのにもったいないね。<BR>
+      </FONT>
+      <TABLE border="1">
+        <TBODY>
+          <TR>
+            <TD><FONT size="+1" face="メイリオ">bennetng_AnotherGS_v2-1.sf2</FONT></TD>
+            <TD align="right"><FONT size="+1" face="メイリオ">32.5</FONT></TD>
+          </TR>
+          <TR>
+            <TD><FONT size="+1" face="メイリオ">campbells_harpischord_tuned_1.sf2</FONT></TD>
+            <TD align="right"><FONT size="+1" face="メイリオ">9.6</FONT></TD>
+          </TR>
+          <TR>
+            <TD><FONT size="+1" face="メイリオ">CampbellsPianoBeta2.sf2</FONT></TD>
+            <TD align="right"><FONT size="+1" face="メイリオ">5.0</FONT></TD>
+          </TR>
+          <TR>
+            <TD><FONT size="+1" face="メイリオ">clavinovapiano1v2.0.sf2</FONT></TD>
+            <TD align="right"><FONT size="+1" face="メイリオ">120.7</FONT></TD>
+          </TR>
+          <TR>
+            <TD><FONT size="+1" face="メイリオ">Equinox_Grand_Pianos.sf2</FONT></TD>
+            <TD align="right"><FONT size="+1" face="メイリオ">91.7</FONT></TD>
+          </TR>
+          <TR>
+            <TD><FONT size="+1" face="メイリオ">FluidR3_GM.SF2</FONT></TD>
+            <TD align="right"><FONT size="+1" face="メイリオ">141.5</FONT></TD>
+          </TR>
+          <TR>
+            <TD><FONT size="+1" face="メイリオ">Gort's_MiniPiano_J1.SF2</FONT></TD>
+            <TD align="right"><FONT size="+1" face="メイリオ">0.1</FONT></TD>
+          </TR>
+          <TR>
+            <TD><FONT size="+1" face="メイリオ">HS Classic Grand Piano Bright.sf2</FONT></TD>
+            <TD align="right"><FONT size="+1" face="メイリオ">26.3</FONT></TD>
+          </TR>
+          <TR>
+            <TD><FONT size="+1" face="メイリオ">HS Classic Grand Piano Damped.sf2</FONT></TD>
+            <TD align="right"><FONT size="+1" face="メイリオ">25.0</FONT></TD>
+          </TR>
+          <TR>
+            <TD><FONT size="+1" face="メイリオ">HS Classic Grand Piano.sf2</FONT></TD>
+            <TD align="right"><FONT size="+1" face="メイリオ">29.0</FONT></TD>
+          </TR>
+          <TR>
+            <TD><FONT size="+1" face="メイリオ">JyunPiano.SF2</FONT></TD>
+            <TD align="right"><FONT size="+1" face="メイリオ">4.9</FONT></TD>
+          </TR>
+          <TR>
+            <TD><FONT size="+1" face="メイリオ">MT_Clavicembalo884.sf2</FONT></TD>
+            <TD align="right"><FONT size="+1" face="メイリオ">1.3</FONT></TD>
+          </TR>
+          <TR>
+            <TD><FONT size="+1" face="メイリオ">PC51d.sf2</FONT></TD>
+            <TD align="right"><FONT size="+1" face="メイリオ">56.1</FONT></TD>
+          </TR>
+          <TR>
+            <TD><FONT size="+1" face="メイリオ">pianissimum.SF2</FONT></TD>
+            <TD align="right"><FONT size="+1" face="メイリオ">6.7</FONT></TD>
+          </TR>
+          <TR>
+            <TD><FONT size="+1" face="メイリオ">Roland_64VoicePiano.sf2</FONT></TD>
+            <TD align="right"><FONT size="+1" face="メイリオ">6.8</FONT></TD>
+          </TR>
+          <TR>
+            <TD><FONT size="+1" face="メイリオ">RolandNicePiano.sf2</FONT></TD>
+            <TD align="right"><FONT size="+1" face="メイリオ">6.2</FONT></TD>
+          </TR>
+          <TR>
+            <TD><FONT size="+1" face="メイリオ">splendid_136.sf2</FONT></TD>
+            <TD align="right"><FONT size="+1" face="メイリオ">131.7</FONT></TD>
+          </TR>
+          <TR>
+            <TD><FONT size="+1" face="メイリオ">SRX_2_Grand_3_layer_(Complete).sf2</FONT></TD>
+            <TD align="right"><FONT size="+1" face="メイリオ">59.4</FONT></TD>
+          </TR>
+          <TR>
+            <TD><FONT size="+1" face="メイリオ">Steinway bright 1.0b.SF2</FONT></TD>
+            <TD align="right"><FONT size="+1" face="メイリオ">11.0</FONT></TD>
+          </TR>
+          <TR>
+            <TD><FONT size="+1" face="メイリオ">surprise.SF2</FONT></TD>
+            <TD align="right"><FONT size="+1" face="メイリオ">1.4</FONT></TD>
+          </TR>
+          <TR>
+            <TD><FONT size="+1" face="メイリオ">WST25FStein_00Sep22.SF2</FONT></TD>
+            <TD align="right"><FONT size="+1" face="メイリオ">21.1</FONT></TD>
+          </TR>
+          <TR>
+            <TD><FONT size="+1" face="メイリオ">xpander_classicfilter_sky.sf2</FONT></TD>
+            <TD align="right"><FONT size="+1" face="メイリオ">42.5</FONT></TD>
+          </TR>
+          <TR>
+            <TD><FONT size="+1" face="メイリオ">YamahaGrand_Adcock.SF2</FONT></TD>
+            <TD align="right"><FONT size="+1" face="メイリオ">9.6</FONT></TD>
+          </TR>
+          <TR>
+            <TD><FONT size="+1" face="メイリオ">zsf_piano_electric_1.sf2</FONT></TD>
+            <TD align="right"><FONT size="+1" face="メイリオ">0.8</FONT></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      <FONT size="-1" face="メイリオ"><BR>
+      <BR>
+      </FONT></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</CENTER>
+</BODY>
+</HTML>

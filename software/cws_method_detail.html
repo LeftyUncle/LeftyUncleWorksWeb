@@ -1,0 +1,900 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="IBM WebSphere Studio Homepage Builder Version 12.0.5.0 for Windows">
+<META http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<META http-equiv="Content-Style-Type" content="text/css">
+<TITLE></TITLE>
+</HEAD>
+<BODY>
+<P align="center"><A href="../mymaster/mymaster_index.html" target="_blank"><IMG src="../banner.jpg" width="831" height="84" border="0"></A></P>
+<CENTER>
+<TABLE border="0" cellpadding="0" cellspacing="0" id="_HPB_LINK_MENU_TABLE_121117160018" class="hpb-hmenu1">
+  <TBODY>
+    <TR align="center">
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="cws_method.html" target="_self">戻る</A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</CENTER>
+
+<BR>
+<CENTER>
+<TABLE table style="border-style : groove;">
+  <TBODY>
+    <TR>
+      <TD width="820">
+      <P style="font-family : メイリオ;font-weight : normal;"><FONT style="font-family : メイリオ;"><A name="010"><B>TargetBookActive メソッド</B></A></FONT><BR>
+      <FONT size="-1">Public Function TargetBookActive(Optional vBookName As Variant) As Boolean<BR>
+      TargetBookプロパティのブックをアクティブにします。<BR>
+      </FONT></P>
+      <TABLE border="border-style : groove;" width="810">
+        <TBODY>
+          <TR>
+            <TH style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">引数</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">データ型</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">説明</FONT></TH>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">[vBookName]</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">TargetBookプロパティのWorkBookをアクティブにします。<BR>
+            引数を指定するとそのWorkBookオブジェクトががTargetBookプロパティにセットされます。<BR>
+            </FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">戻り値</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">Boolean</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">True:正常終了 False:異常終了。</FONT></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      <BR>
+      <P style="font-family : メイリオ;font-weight : normal;"><FONT style="font-family : メイリオ;"><A name="020"><B>TargetSheetActive メソッド</B></A></FONT><BR>
+      <FONT size="-1">Public Function TargetSheetActive(Optional vSheetName As Variant, Optional
+      vBookName As Variant) As Boolean<BR>
+      TargetBook.TargetSheetプロパティのシートをアクティブにします。<BR>
+      </FONT></P>
+      <TABLE border="border-style : groove;" width="810">
+        <TBODY>
+          <TR>
+            <TH style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">引数</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">データ型</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;" width="665"><FONT size="-1">説明</FONT></TH>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">[sSheetName]</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="665"><FONT size="-1">TargetBook.TargetSheetプロパティのWorkSheetをアクティブにします。<BR>
+            引数を指定するとそのWorkSheetオブジェクトががTargetSheetプロパティにセットされます。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">[vBookName]</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="665"><FONT size="-1">TargetBookプロパティのWorkBookをアクティブにします。<BR>
+            引数を指定するとそのWorkBookオブジェクトががTargetBookプロパティにセットされます。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">戻り値</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">Boolean</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="665"><FONT size="-1">True:正常終了 False:異常終了。</FONT></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      <BR>
+      <P style="font-family : メイリオ;font-weight : normal;"><FONT style="font-family : メイリオ;"><A name="030"><B>EnumBookName メソッド</B></A></FONT><BR>
+      <FONT size="-1">Public Function EnumBookName(ByRef sBookName() As String, Optional bIncludeMyself
+      As Variant) As Long<BR>TagetBook若しくは引数で指定したブックのシートの名前を列挙し、シートの名前を配列変数に返します。戻り値は取得したシート名の数です。<BR>
+      </FONT></P>
+      <TABLE border="border-style : groove;" width="810">
+        <TBODY>
+          <TR>
+            <TH style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">引数</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">データ型</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;" width="665"><FONT size="-1">説明</FONT></TH>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">ByRef sBookName()</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="665"><FONT size="-1">ブック名を格納する配列を指定します。配列の要素数の指定は不要です。<BR>
+            メソッド内でReDimします。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">[bIncludeMyself]</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">Boolean</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="665"><FONT size="-1">True:自分自身を配列に含める。 False：含めない。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">戻り値</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">Long</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="665"><FONT size="-1">取得したブック名の数が返ります。 エラー時は、NumErrorReturn が返ります。</FONT></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      <BR>
+      <P style="font-family : メイリオ;font-weight : normal;"><FONT style="font-family : メイリオ;"><A name="040"><B>EnumSheetName メソッド</B></A></FONT><BR>
+      <FONT size="-1">Public Function EnumSeetName(ByRef sSeetName() As String, Optional vBookName
+      As Variant) As Long<BR>TagetBook若しくは引数で指定したブックのシートの名前を列挙し、シートの名前を配列変数に返します。戻り値は取得したシート名の数です。<BR>
+      </FONT></P>
+      <TABLE border="border-style : groove;" width="810">
+        <TBODY>
+          <TR>
+            <TH style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">引数</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;" ><FONT size="-1">データ型</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;" width="665"><FONT size="-1">説明</FONT></TH>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">ByRef sSheetName()</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" ><FONT size="-1">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="665"><FONT size="-1">シート名を格納する配列を指定します。配列の要素数の指定は不要です。<BR>
+            メソッド内でReDimします。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">[vBookName]</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" ><FONT size="-1">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="665"><FONT size="-1"> 引数を指定するとそのWorkBookのシート名が返ります。<BR>
+            指定した名前のWorkBookオブジェクトががTargetBookプロパティにセットされます。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">戻り値</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1">Long</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1">取得したシート名名の数が返ります。 エラー時は、NumErrorReturn が返ります。</FONT></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      <BR>
+      <P style="font-family : メイリオ;font-weight : normal;"><FONT style="font-family : メイリオ;"><A name="050"><B>AddrSep メソッド</B></A></FONT><BR>
+      <FONT size="-1">Public Function AddrSep(sAddr As String) As Boolean<BR>
+      アドレスをアルファ部と数値部に分けてAddrAlphaプロパティとAddrNumプロパティにセットされます。<BR>
+      </FONT></P>
+      <TABLE border="border-style : groove;" width="810">
+        <TBODY>
+          <TR>
+            <TH style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">引数</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;" ><FONT size="-1">データ型</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;" width="665"><FONT size="-1">説明</FONT></TH>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">sAddr</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" ><FONT size="-1">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="665">A1形式のアドレス値を指定します。</TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">戻り値</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1">Boolean</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1">True:正常終了 False:異常終了。</FONT></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      <BR>
+      <P style="font-family : メイリオ;font-weight : normal;"><FONT style="font-family : メイリオ;"><A name="060"><B>AddAddrHorizontal メソッド</B></A></FONT><BR>
+      <FONT size="-1">Public Function AddAddrHorizontal(sAddr As String, nAdd As Long) As String<BR>A1形式のセルアドレスを水平方向に加減算して計算後のアドレスを返します。<BR>
+      </FONT></P>
+      <TABLE border="border-style : groove;" width="810">
+        <TBODY>
+          <TR>
+            <TH style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">引数</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;" ><FONT size="-1">データ型</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;" width="665"><FONT size="-1">説明</FONT></TH>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">sAddr</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" ><FONT size="-1">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="665"><FONT size="-1">A1形式のアドレス値を指定します。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">nAdd</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" ><FONT size="-1">Long</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="665"><FONT size="-1">加減算する値を設定します。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">戻り値</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1">加減算された結果のA!形式のアドレスが返ります。エラー時はAddrErrorReturnが返ります。</FONT></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      <BR>
+      <P style="font-family : メイリオ;font-weight : normal;"><FONT style="font-family : メイリオ;"><A name="070"><B>AddAddrVertical メソッド</B></A></FONT><BR>
+      <FONT size="-1">Public Function AddAddrVertical(sAddr As String, nAdd As Long) As String<BR>A1形式のセルアドレスを垂直方向に加減算して計算後のアドレスを返します。<BR>
+      </FONT></P>
+      <TABLE border="border-style : groove;" width="810">
+        <TBODY>
+          <TR>
+            <TH style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">引数</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;" ><FONT size="-1">データ型</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;" width="665"><FONT size="-1">説明</FONT></TH>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">sAddr</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" ><FONT size="-1">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="665"><FONT size="-1">A1形式のアドレス値を指定します。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">nAdd</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" ><FONT size="-1">Long</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="665"><FONT size="-1">加減算する値を設定します。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">戻り値</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1">加減算された結果のA!形式のアドレスが返ります。エラー時はAddrErrorReturnが返ります。</FONT></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      <BR>
+      <FONT style="font-family : メイリオ;"><A name="080"><B>GetValue メソッド</B></A></FONT><BR>
+      <FONT size="-1">Public Function GetValue(sSetValue As String, Optional sAddr As Variant,
+      Optional sSheetName As Variant, Optional sBookName As Variant) As String<BR>
+      セルの値を取得します。<BR>
+      NextAddrプロパティにNextAddrRight値をセットするとメソッド内でカーソルが右に移動し連続して右方向にセル値を取得出来ます。<BR>
+      NextAddrプロパティにNextAddrDown値をセットするとメソッド内でカーソルが下に移動し連続して右方向にセル値取得出来ます。<BR>
+      NextAddrプロパティにNextAddrDownをセットするとメソッド内ではカーソルを移動しません。<BR>
+      TargeyAddrを指定するか、引数のsAddrを指定しなければ別のアドレスの値は取得出来ません。</FONT>
+      <TABLE border="border-style : groove;" width="810">
+        <TBODY>
+          <TR>
+            <TH style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">引数</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;" ><FONT size="-1">データ型</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;" width="665"><FONT size="-1">説明</FONT></TH>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">[sAddr]</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" ><FONT size="-1">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="665"><FONT size="-1">値を取得するA1形式のアドレスを指定します。省略するとTargetAddrプロパティが使われます。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">[sSheetName]</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" ><FONT size="-1">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="665"><FONT size="-1">値を取得するシート名を指定します。省略するとTargetSheetプロパティが使われます。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">[sBookName]</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" ><FONT size="-1">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="665"><FONT size="-1">値を取得するブック名を指定します。省略するとTargetBookプロパティが使われます。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">戻り値</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1">取得した値が返ります。エラー時はValueErrorReturnが返ります。</FONT></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      <BR>
+      <P style="font-family : メイリオ;font-weight : normal;"><FONT style="font-family : メイリオ;"><A name="090"><B>SetValue メソッド</B></A></FONT><BR>
+      <FONT size="-1">Public Function SetValue(sSetValue As String, Optional sAddr As Variant,
+      Optional sSheetName As Variant, Optional sBookName As Variant) As Boolean<BR>
+      セルに値を設定します。<BR>
+      NextAddrプロパティにNextAddrRight値をセットするとメソッド内でカーソルが右に移動し連続して右方向にセル値を設定出来ます。<BR>
+      NextAddrプロパティにNextAddrDown値をセットするとメソッド内でカーソルが下に移動し連続して右方向にセル値を設定出来ます。<BR>
+      NextAddrプロパティにNextAddrDownをセットするとメソッド内ではカーソルを移動しません。<BR>
+      TargeyAddrを指定するか、引数のsAddrを指定しなければ別のアドレスの値は設定は出来ません。</FONT></P>
+      <TABLE border="border-style : groove;" width="810">
+        <TBODY>
+          <TR>
+            <TH style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">引数</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;" ><FONT size="-1">データ型</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;" width="665"><FONT size="-1">説明</FONT></TH>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">[sAddr]</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" ><FONT size="-1">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="665"><FONT size="-1">値を設定するA1形式のアドレスを指定します。省略するとTargetAddrプロパティが使われます。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">[sSheetName]</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" ><FONT size="-1">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="665"><FONT size="-1">値を設定するシート名を指定します。省略するとTargetSheetプロパティが使われます。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">[sBookName]</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" ><FONT size="-1">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="665"><FONT size="-1">値を設定するブック名を指定します。省略するとTargetBookプロパティが使われます。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">戻り値</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1">Boolean</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1">True:正常終了 False:異常終了。</FONT></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      <BR>
+      <P style="font-family : メイリオ;font-weight : normal;"><FONT style="font-family : メイリオ;"><A name="100"><B>SheetDataDelete メソッド</B></A></FONT><BR>
+      <FONT size="-1">Public Function SheetDataDelete(Optional vSheetName As Variant, Optional vBookName As Variant) As Boolean As Boolean<BR>
+      シートに入力されている値、書式を削除します。<BR>
+      </FONT></P>
+      <TABLE border="border-style : groove;" width="810">
+        <TBODY>
+          <TR>
+            <TH style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">引数</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;" ><FONT size="-1">データ型</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;" width="665"><FONT size="-1">説明</FONT></TH>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">[sSheetName]</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" ><FONT size="-1">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="665"><FONT size="-1">値を設定するシート名を指定します。省略するとTargetSheetプロパティが使われます。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">[sBookName]</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" ><FONT size="-1">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="665"><FONT size="-1">値を設定するブック名を指定します。省略するとTargetBookプロパティが使われます。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">戻り値</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1">Boolean</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1">True:正常終了 False:異常終了。</FONT></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      <BR>
+      <P style="font-family : メイリオ;font-weight : normal;"><FONT style="font-family : メイリオ;"><A name="110"><B>SheetVisible メソッド</B></A></FONT><BR>
+      <FONT size="-1">Public Function SheetVisible(sSheetName As String, bVisible As Boolean,
+      Optional sBookName As Variant) As Boolean<BR>
+      ワークシートを表示/非表示にします。<BR>
+      </FONT></P>
+      <TABLE border="border-style : groove;" width="810">
+        <TBODY>
+          <TR>
+            <TH style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">引数</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;" ><FONT size="-1">データ型</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;" width="665"><FONT size="-1">説明</FONT></TH>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">sSheetName</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" ><FONT size="-1">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="665"><FONT size="-1">表示または非表示にするシート名を指定します。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">bVisible</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" ><FONT size="-1">Boolean</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="665"><FONT size="-1">True:表示します。 False:非表示にしまます。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">[sBookName]</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" ><FONT size="-1">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="665"><FONT size="-1">値を設定するブック名を指定します。省略するとTargetBook.Nameプロパティが使われます。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1">戻り値</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1">Boolean</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1">True:正常終了 False:異常終了。</FONT></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      <BR>
+      <P style="font-family : メイリオ;font-weight : normal;"><FONT style="font-family : メイリオ;"><A name="120"><B>CurStateSave メソッド</B></A></FONT><BR>
+      <FONT size="-1" color="#000000">Public Function CurStateSave() As Boolean<BR>
+      現在のアクティブなブック、シート、アドレスを保存します。<BR>
+      保存したWorkBookオブジェットはSaveBookプロパティで参照できます。<BR>
+      保存したWorkBSheetオブジェクトはSaveSheetプロパティで参照できます。<BR>
+      保存したA1形式アドレス値はSaveAddrプロパティで参照できます。<BR>
+      </FONT></P>
+      <TABLE border="border-style : groove;" width="810">
+        <TBODY>
+          <TR>
+            <TH style="font-family : メイリオ;font-weight : normal;"><FONT size="-1" color="#000000">引数</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;" ><FONT size="-1" color="#000000">データ型</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;" width="665"><FONT size="-1" color="#000000">説明</FONT></TH>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1" color="#000000">戻り値</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1" color="#000000">Boolean</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1" color="#000000">True:正常終了 False:異常終了。</FONT></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      <BR>
+      <P style="font-family : メイリオ;font-weight : normal;"><FONT style="font-family : メイリオ;"><A name="130"><B>CurStateLoad メソッド</B></A></FONT><BR>
+      <FONT size="-1" color="#000000">Public Function CurStateLoad() As Boolean<BR>CurStateSaveメソッドで保存したブック、シート、アドレスを復元し、アクティブにします。<BR>
+      SaveBookプロパティがTagetBookプロパティに復元されアクティブになります。<BR>
+      SaveSheetプロパティがTargetSheetプロパティに復元されてアクティブになります。<BR>
+      SaveAddrプロパティがTargetAddrに復元されてアクティブになります。<BR>
+      </FONT></P>
+      <TABLE border="border-style : groove;" width="810">
+        <TBODY>
+          <TR>
+            <TH style="font-family : メイリオ;font-weight : normal;"><FONT size="-1" color="#000000">引数</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;" ><FONT size="-1" color="#000000">データ型</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;" width="665"><FONT size="-1" color="#000000">説明</FONT></TH>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1" color="#000000">戻り値</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1" color="#000000">Boolean</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1" color="#000000">True:正常終了 False:異常終了。</FONT></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      <BR>
+      <P style="font-family : メイリオ;font-weight : normal;"><FONT style="font-family : メイリオ;"><A name="140"><B>IniWrite メソッド</B></A></FONT><BR>
+      <FONT size="-1" color="#000000">Public Function IniWrite(sBookName As String, sSheetName As String, sKey
+      As String, sValue As String, Optional vStartAddr As Variant) As String<BR>指定したブック／シートの 開始アドレスから下方向に参照し、sKeyと同じ値が見つかれば右隣のセルに値を書き込みます。</FONT></P>
+      <TABLE border="border-style : groove;" width="810">
+        <TBODY>
+          <TR>
+            <TH style="font-family : メイリオ;font-weight : normal;"><FONT size="-1" color="#000000">引数</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;" ><FONT size="-1" color="#000000">データ型</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;" width="665"><FONT size="-1" color="#000000">説明</FONT></TH>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1" color="#000000">sBookName<BR>
+            </FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1" color="#000000">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1">値を設定したいシートのブック名を指定します。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1" color="#000000">sSheetName</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1" color="#000000">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1" color="#000000">値を設定したいシート名を指定します。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1" color="#000000">sKey</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1" color="#000000">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1" color="#000000">検索する文字列、Key を指定します。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1" color="#000000">sValue</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1" color="#000000">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1" color="#000000">設定する値を指定します。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1" color="#000000">[vStartAddr]</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1" color="#000000">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1">検索するキーのA1形式のアドレスをしてします。省略すると「A1」になります。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1" color="#000000">戻り値</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1" color="#000000">Boolean</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1" color="#000000">True:正常終了 False:異常終了。</FONT></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      <BR>
+      <P style="font-family : メイリオ;font-weight : normal;"><FONT style="font-family : メイリオ;"><B><A name="150">IniGet メソッド</A></B></FONT><BR>
+      <FONT size="-1" color="#000000">Public Function IniGet(sBookName As String, sSheetName As String, sKey
+      As String, Optional sStartAddr As Variant) As String<BR>
+      指定したブック／シートの 開始アドレスから下方向に参照し、sKeyと同じ値が見つかれば右隣のセルの値を返します。</FONT></P>
+      <TABLE border="border-style : groove;" width="810">
+        <TBODY>
+          <TR>
+            <TH style="font-family : メイリオ;font-weight : normal;"><FONT size="-1" color="#000000">引数</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;" ><FONT size="-1" color="#000000">データ型</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;" width="665"><FONT size="-1" color="#000000">説明</FONT></TH>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1" color="#000000">sBookName<BR>
+            </FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1" color="#000000">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1">値を取得したいシートのブック名を指定します。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1" color="#000000">sSheetName</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1" color="#000000">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1" color="#000000">値を取得したいシート名を指定します。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1" color="#000000">sKey</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1" color="#000000">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1" color="#000000">検索する文字列、Key を指定します。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1" color="#000000">[vStartAddr]</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1" color="#000000">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1">検索するキーのA1形式のアドレスをしてします。省略すると「A1」になります。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1" color="#000000">戻り値</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1" color="#000000">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1">取得した値が返ります。キーが見つからなかった場合やエラーが発生した場合は空白が返ります。</FONT></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      <BR>
+      <P style="font-family : メイリオ;font-weight : normal;"><FONT style="font-family : メイリオ;"><B><A name="160">SetFormatType メソッド</A></B></FONT><BR>
+      <FONT size="-1" color="#000000">Public Function SetFormatType(sAddr As String, sType As String) As Boolean<BR>
+      A1形式のアドレスのセルの表示形式を設定します。<BR>
+      (注意)<BR>
+      このメソッドはブック、シートを指定しません。<BR>
+      メソッドを使用したときにアクティブになっているブック、シートのアドレスの表示形式を変更します。<BR>
+      </FONT></P>
+      <TABLE border="border-style : groove;" width="810">
+        <TBODY>
+          <TR>
+            <TH style="font-family : メイリオ;font-weight : normal;"><FONT size="-1" color="#000000">引数</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;" ><FONT size="-1" color="#000000">データ型</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;" width="665"><FONT size="-1" color="#000000">説明</FONT></TH>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1" color="#000000">sAddr</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1" color="#000000">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1">表示形式を変更したいA1形式のアドレスを指定します。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1" color="#000000">sType</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1" color="#000000">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653">以下のプロパティを設定します。<BR>
+            <TABLE border="1">
+              <TBODY>
+                <TR>
+                  <TD align="center"><FONT face="メイリオ" size="-1">プロパティ</FONT></TD>
+                  <TD align="center"><FONT face="メイリオ" size="-1">説明</FONT></TD>
+                </TR>
+                <TR>
+                  <TD><FONT size="-1" face="メイリオ">FormatTypeString</FONT></TD>
+                  <TD><FONT face="メイリオ" size="-1">表示形式を「文字列」にします。</FONT></TD>
+                </TR>
+                <TR>
+                  <TD><FONT size="-1" face="メイリオ">FormatTypeNumeric</FONT></TD>
+                  <TD><FONT face="メイリオ" size="-1">表示形式を「数値」にします。</FONT></TD>
+                </TR>
+                <TR>
+                  <TD><FONT size="-1" face="メイリオ">FormatTypeNomal</FONT></TD>
+                  <TD><FONT face="メイリオ" size="-1">表示形式を「標準」にします。</FONT></TD>
+                </TR>
+              </TBODY>
+            </TABLE>
+            </TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1" color="#000000">戻り値</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1" color="#000000">Boolean</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1" color="#000000">True:正常終了 False:異常終了。</FONT></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      <BR>
+      <P style="font-family : メイリオ;font-weight : normal;"><FONT style="font-family : メイリオ;"><B><A name="170">GetValueToStringArrayVertical メソッド</A></B></FONT><BR>
+      <FONT size="-1" color="#000000">Public Function GetValueToStringArrayVertical(ByRef sValArray() As String,
+      ByRef sValAddr() As String, vEndType As Variant, sAddr As String, Optional
+      vSheetName As Variant, Optional vBookName As Variant) As Long<BR>指定したアドレス方縦方向に値を取得し文字型配列に格納します。<BR>
+      </FONT></P>
+      <TABLE border="border-style : groove;" width="810">
+        <TBODY>
+          <TR>
+            <TH style="font-family : メイリオ;font-weight : normal;"><FONT size="-1" color="#000000">引数</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;" ><FONT size="-1" color="#000000">データ型</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;" width="665"><FONT size="-1" color="#000000">説明</FONT></TH>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1" color="#000000">ByRef sValArray()</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1" color="#000000">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1">値を格納する文字型配列を指定します。<BR>
+            配列の要素数の指定は不要です。メソッド内でReDimします。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1" color="#000000">ByRef sValAddr()</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1" color="#000000">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1">値のA1形式のアドレスを格納する文字型配列を指定します。<BR>
+            配列の要素数の指定は不要です。メソッド内でReDimします。<BR>
+            </FONT>
+            
+            </TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;" valign="middle"><FONT size="-1" color="#000000">vEndType</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1">データを取得する際の狩猟判定方法をしてします。<BR>
+            整数値を指定した場合は、行がその値に達するまでセル値を取得します。<BR>
+            数値以外を指定した場合は値が入っていないセルが出現するまで取得します。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;" valign="bottom"><FONT size="-1" color="#000000">sAddr</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1" color="#000000">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1">データ取得をかいしるするA1形式のアドレスを指定します。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;" valign="bottom"><FONT size="-1" color="#000000">vSheetName</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1" color="#000000">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1" color="#000000">値を取得するシート名を指定します。省略するとTargetSheetプロパティが使われます。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;" valign="bottom"><FONT size="-1" color="#000000">vBookName</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1" color="#000000">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1" color="#000000">値を取得するブック名を指定します。省略するとTargetBook.Nameプロパティが使われます。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;" valign="bottom"><FONT size="-1" color="#000000">戻り値</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1" color="#000000">Boolean</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1" color="#000000">True:正常終了 False:異常終了。</FONT></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      <BR>
+      <P style="font-family : メイリオ;font-weight : normal;"><FONT style="font-family : メイリオ;"><B><A name="180">DlgBookOpen メソッド</A></B></FONT><BR>
+      <FONT size="-1">Public Function DlgBookOpen(Optional vPath As Variant, Optional vWildCard
+      As Variant) As String</FONT><FONT size="-1" color="#000000"><BR>
+      ファイルを開くダイアログ（コモンダイアログ）を表示します。実際にファイルはOpenしません。BookOpen()メソッドでオープンしてください。<BR>
+      </FONT></P>
+      <TABLE border="border-style : groove;" width="810">
+        <TBODY>
+          <TR>
+            <TH style="font-family : メイリオ;font-weight : normal;"><FONT size="-1" color="#000000">引数</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;" ><FONT size="-1" color="#000000">データ型</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;" width="665"><FONT size="-1" color="#000000">説明</FONT></TH>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1" color="#000000">[vPath]</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1" color="#000000">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1">初期表示するフォルダを指定します。<BR>
+            省略時はログインユーザーのホームパスになります。<BR>
+            ホームパスは環境変数の「HOMEDRIVE」と「HOMEPATH」より取得します。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1" color="#000000">[vWildCard]</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1" color="#000000">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1">初期表示するワイルドカードを「ファイル名称,*.拡張子」でしてします。<BR>
+            省略時は「Excelブック,*.xls」となります。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;" valign="middle"><FONT size="-1" color="#000000">戻り値</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1" color="#000000">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1">選択されたファイル名が返ります。<BR>
+            キャンセル若しくはエラーの時は空白が返ります。</FONT></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      <BR>
+      <P style="font-family : メイリオ;font-weight : normal;"><FONT style="font-family : メイリオ;"><B><A name="190">BookOpen メソッド</A></B></FONT><BR>
+      <FONT size="-1" color="#000000">Public Function BookOpen(sBookName As String, Optional vRealOnly As Variant)
+      As Boolean<BR>ブックを開きます。<BR>
+      </FONT></P>
+      <TABLE border="border-style : groove;" width="810">
+        <TBODY>
+          <TR>
+            <TH style="font-family : メイリオ;font-weight : normal;"><FONT size="-1" color="#000000">引数</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;" ><FONT size="-1" color="#000000">データ型</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;" width="665"><FONT size="-1" color="#000000">説明</FONT></TH>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1" color="#000000">sBookName</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1" color="#000000">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1">オープンするブック名をフルパスでしてします。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1" color="#000000">[vReadOnky]</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1" color="#000000">Boolean</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1">読み取り専用で開くかどうかしてします。<BR>
+            省略時は通常モードでオープンします。Trueを明示的に指定すると読み取り専用で開きます。<BR>
+            </FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;" valign="middle"><FONT size="-1" color="#000000">戻り値</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1" color="#000000">Boolean</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1" color="#000000">True:正常終了 False:異常終了。</FONT></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      <BR>
+      <P style="font-family : メイリオ;font-weight : normal;"><FONT style="font-family : メイリオ;"><B><A name="200">BookClose メソッド</A></B></FONT><BR>
+      <FONT size="-1" color="#000000">Public Function BookClose(Optional vBookName As Variant, Optional vSaveChanges
+      As Variant) As Boolean<BR>
+      ブックを閉じます。<BR>
+      </FONT></P>
+      <TABLE border="border-style : groove;" width="810">
+        <TBODY>
+          <TR>
+            <TH style="font-family : メイリオ;font-weight : normal;"><FONT size="-1" color="#000000">引数</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;" ><FONT size="-1" color="#000000">データ型</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;" width="665"><FONT size="-1" color="#000000">説明</FONT></TH>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1" color="#000000">[vBookName]</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1" color="#000000">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1">閉じるブック名を指定します。フルパスではなくブック名だけを指定します。<BR>
+            省略時はTargetBook.Nameプロパティが使用されます。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1" color="#000000">[vSaveChanges]</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1" color="#000000">Boolean</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1">変更を保存するかどうかをしてします。<BR>
+            省略時は変更を保存しません。Trueを明示的に指定すると変更を保存します。<BR>
+            </FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;" valign="middle"><FONT size="-1" color="#000000">戻り値</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1" color="#000000">Boolean</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1" color="#000000">True:正常終了 False:異常終了。</FONT></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      <BR>
+      <P style="font-family : メイリオ;font-weight : normal;"><FONT style="font-family : メイリオ;"><B><A name="210">BookExists メソッド</A></B></FONT><BR>
+      <FONT size="-1" color="#000000">Public Function BookExists(sBookName As String) As Boolean<BR>Bookの存在チェック（開かれているかどうか？）チェックします。<BR>
+      </FONT></P>
+      <TABLE border="border-style : groove;" width="810">
+        <TBODY>
+          <TR>
+            <TH style="font-family : メイリオ;font-weight : normal;"><FONT size="-1" color="#000000">引数</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;" ><FONT size="-1" color="#000000">データ型</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;" width="665"><FONT size="-1" color="#000000">説明</FONT></TH>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1" color="#000000">sBookName</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1" color="#000000">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653">開かれているかどうかを調べるブック名を指定します。</TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;" valign="middle"><FONT size="-1" color="#000000">戻り値</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1" color="#000000">Boolean</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1" color="#000000">True:ブックが開かれている False:ブックは開かれていない、もしくはエラーが発生した。</FONT></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      <BR>
+      <P style="font-family : メイリオ;font-weight : normal;"><FONT style="font-family : メイリオ;"><B><A name="220">SheetExists メソッド</A></B></FONT><BR>
+      <FONT size="-1" color="#000000">Public Function SheetExists(sBookName As String, sSheetName As String)
+      As Boolean<BR>
+      指定したBook上にシートが存在するかチェックします。<BR>
+      </FONT></P>
+      <TABLE border="border-style : groove;" width="810">
+        <TBODY>
+          <TR>
+            <TH style="font-family : メイリオ;font-weight : normal;"><FONT size="-1" color="#000000">引数</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;" ><FONT size="-1" color="#000000">データ型</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;" width="665"><FONT size="-1" color="#000000">説明</FONT></TH>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1" color="#000000">sBookName</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1" color="#000000">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1">シートが存在するかを調べるブック名を調べます。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1" color="#000000">sSheetName</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1" color="#000000">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1">存在するかを調べるシート名を調べます。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;" valign="middle"><FONT size="-1" color="#000000">戻り値</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1" color="#000000">Boolean</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1" color="#000000">True:ブックが開かれている False:ブックは開かれていない、もしくはエラーが発生した。</FONT></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      <BR>
+      <P style="font-family : メイリオ;font-weight : normal;"><FONT style="font-family : メイリオ;"><B><A name="230">AlphaToNum メソッド</A></B></FONT><BR>
+      <FONT size="-1" color="#000000">Public Function AlphaToNum(sAddr As String) As Long<BR>「A」から「ZZ」までのアルファベットのアドレスを数字で返します。<BR>（A=1, B=2 … Z=26 … 
+IV=256)<BR>
+      </FONT></P>
+      <TABLE border="border-style : groove;" width="810">
+        <TBODY>
+          <TR>
+            <TH style="font-family : メイリオ;font-weight : normal;"><FONT size="-1" color="#000000">引数</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;" ><FONT size="-1" color="#000000">データ型</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;" width="665"><FONT size="-1" color="#000000">説明</FONT></TH>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1" color="#000000">sAddr</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1" color="#000000">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1">数字で返すA1形式のアドレスを指定します。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;" valign="middle"><FONT size="-1" color="#000000">戻り値</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1">Long</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1">アドレスを数値に変換した値が返ります。<BR>
+            エラーの時はNumErrorReturnプロパティが返ります。</FONT></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      <FONT size="-1"><BR>
+      </FONT>
+      <P style="font-family : メイリオ;font-weight : normal;"><FONT style="font-family : メイリオ;"><B><A name="240">AddrAlphaArray メソッド</A></B></FONT><BR>
+      <FONT size="-1">Public Function AddrAlphaArray(ByRef sAddr() As String) As Long<BR>
+      </FONT><FONT size="-1" color="#000000">A1「A」から「ZZ」までのアルファベットを文字列配列に格納します。（要素数は７０１になります）</FONT></P>
+      <TABLE border="border-style : groove;" width="810">
+        <TBODY>
+          <TR>
+            <TH style="font-family : メイリオ;font-weight : normal;"><FONT size="-1" color="#000000">引数</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;" ><FONT size="-1" color="#000000">データ型</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;" width="665"><FONT size="-1" color="#000000">説明</FONT></TH>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1" color="#000000">ByRef sAddr()</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1" color="#000000">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1">A1形式のアドレスのアルファ部をAからZZまで格納する文字が多配列を指定します。<BR>
+            配列の要素数の指定は不要です。メソッド内でReDimします。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;" valign="middle"><FONT size="-1" color="#000000">戻り値</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1">Long</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1">格納した値の数を返します。<BR>
+            エラーの時はNumErrorReturnプロパティが返ります。</FONT></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      <FONT size="-1"><BR>
+      </FONT>
+      <P style="font-family : メイリオ;font-weight : normal;"><FONT style="font-family : メイリオ;"><B><A name="250">EndRowJudg メソッド</A></B></FONT><BR>
+      <FONT size="-1">Public Function EndRowJudg(nEndCount As Long, Optional vSheetName As Variant,
+      Optional vBookName As Variant, Optional vStartAddrAlpha As Variant, Optional
+      vEndAddrAlpha As Variant) As Long<BR>
+      開始アドレスから終了アドレスまで縦でセルの値を参照し、EndCountだけ空白が連続した列最大行を返します。<BR>
+      範囲指定してデータの最終行をはんてする時などに使用します。<BR>
+      指定した個数のセル値が連続して空白となった時、最初に空白が見つかった行－１を最終行とします。</FONT></P>
+      <TABLE border="border-style : groove;" width="810">
+        <TBODY>
+          <TR>
+            <TH style="font-family : メイリオ;font-weight : normal;"><FONT size="-1" color="#000000">引数</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;" ><FONT size="-1" color="#000000">データ型</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;" width="665"><FONT size="-1" color="#000000">説明</FONT></TH>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1" color="#000000">nEndCount</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1">Long</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1">空白値の連続最大値を指定します。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;" valign="bottom"><FONT size="-1" color="#000000">[vSheetNam]e</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1" color="#000000">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1" color="#000000">値を取得するシート名を指定します。省略するとTargetSheetプロパティが使われます。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;" valign="bottom"><FONT size="-1" color="#000000">[vBookName]</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1" color="#000000">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1" color="#000000">値を取得するブック名を指定します。省略するとTargetBook.Nameプロパティが使われます。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1" color="#000000">[vStartAddrAlpha]</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1">最終行を判定するA1形式のアドレスの開始値（アルファ部のみ）を指定します。<BR>
+            省略したときは「A」となります。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;"><FONT size="-1" color="#000000">[vEndAddrAlpha]</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1">Striing</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1">最終行を判定するA1形式のアドレスの終了値（アルファ部のみ）を指定します。<BR>
+            省略したときは「Z」となります。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;" valign="middle"><FONT size="-1" color="#000000">戻り値</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1">Long</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1">判定した最終行の値が返ります。<BR>
+            エラーの時はNumErrorReturnプロパティが返ります。</FONT></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      <FONT size="-1"><BR>
+      </FONT>
+      <P style="font-family : メイリオ;font-weight : normal;"><FONT style="font-family : メイリオ;"><B><A name="260">SheetAutoFilt メソッド</A></B></FONT><BR>
+      <FONT size="-1">Public Function SheetAutoFilt(Optional vBookName As Variant, Optional vSheetName
+      As Variant) As Boolean<BR>
+      列の幅を入力されている最大長に合わせます。</FONT></P>
+      <TABLE border="border-style : groove;" width="810">
+        <TBODY>
+          <TR>
+            <TH style="font-family : メイリオ;font-weight : normal;"><FONT size="-1" color="#000000">引数</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;" ><FONT size="-1" color="#000000">データ型</FONT></TH>
+            <TH style="font-family : メイリオ;font-weight : normal;" width="665"><FONT size="-1" color="#000000">説明</FONT></TH>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;" valign="bottom"><FONT size="-1" color="#000000">[vSheetNam]e</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1" color="#000000">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1" color="#000000">値を取得するシート名を指定します。省略するとTargetSheetプロパティが使われます。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;" valign="bottom"><FONT size="-1" color="#000000">[vBookName]</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1" color="#000000">String</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1" color="#000000">値を取得するブック名を指定します。省略するとTargetBook.Nameプロパティが使われます。</FONT></TD>
+          </TR>
+          <TR>
+            <TD style="font-family : メイリオ;font-weight : normal;" valign="bottom"><FONT size="-1" color="#000000">戻り値</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="52"><FONT size="-1" color="#000000">Boolean</FONT></TD>
+            <TD style="font-family : メイリオ;font-weight : normal;" width="653"><FONT size="-1" color="#000000">True:正常終了 False:異常終了。</FONT></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      <BR>
+      <p><FONT style="font-family : メイリオ;" size="-1"><A href="cws_index.html" target="_self">－ 戻る －</A><BR>
+      <BR>
+      </FONT></p>
+      </TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</CENTER>
+</BODY>
+</HTML>

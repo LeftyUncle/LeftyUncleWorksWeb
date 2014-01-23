@@ -1,0 +1,154 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="IBM WebSphere Studio Homepage Builder Version 12.0.5.0 for Windows">
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<META http-equiv="Content-Style-Type" content="text/css">
+<TITLE>ブログ</TITLE>
+</HEAD>
+<BODY>
+<P align="center"><IMG src="../2012-12-29/banner.jpg" width="832" height="84" border="0"></P>
+<CENTER>
+<TABLE border="0" cellpadding="0" cellspacing="0" id="_HPB_LINK_MENU_TABLE_121117160018" class="hpb-hmenu1">
+  <TBODY>
+    <TR align="center">
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../../index.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">TOP </A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../00_blog_index.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">weblog</A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../../lib/lib.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">TIPS</A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../../myworks/myworks.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">Works</A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../../link.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">リンク</A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</CENTER>
+<CENTER>
+<TABLE border="1">
+  <TBODY>
+    <TR>
+      <TD width="819"  valign="top"><FONT color="#000000" face="メイリオ">2013-02-25 Intel CPU の特性について（初心者向け）<BR>
+      </FONT><FONT face="メイリオ"><BR>
+      誤解から無駄な買い物とかしない方が良いのに越したことはないので書いてみました。<BR>
+      </FONT><BR>
+      <B><FONT face="メイリオ">(CPU使用率)</FONT></B><BR>
+      <div style="color: rgb(34, 34, 34); font-family: arial; font-size: small; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;"><FONT face="メイリオ" size="+1" style="font-size : 117%;">Windowsのタスクマネージャーで見る事ができる「CPU使用率」について、何度か尋ねられた事があります。<BR>
+      誤解されている方が多いので少し解説してみたいと思います。<BR>
+      あるアプリ（ゲームやツール、なんでもよい）を稼働させて、使用率が１００％に近いからCPUの能力が不足しているわけではないのです。<BR>
+      「CPU使用率」の数値はCPU能力と全く関係ありません。<BR>
+      測定時間内にCPUがどれだけ「使用」されていたかを表示しているだけです。<BR>
+      単純な1ケタの足し算を１０億回繰り返すプログラムと、１０桁の難しい算術演算を１０億回プログラムのどちらを動かしてもCPU使用率はほぼ１００％付近をウロチョロします。<BR>
+      CPUの能力はこの１０億回の演算を完了するまでの時間で決まるのです。<BR>
+      下の動画はブルーレイの圧縮リッピング、ブルーレイのソフトウェアコーデックによる再生、YouTubeの再生の３つのアプリを同時に実行したものですがCPU使用率のグラフは１００％になっています。<BR>
+      でも、この３つのアプリはとどこうりなくスムースに動作しています。<BR>
+      動画が多少カクカクしているのはディスクトップ録画ソフトのレートを落としているせいで、実際は違和感なく再生出来ています。</FONT><FONT face="メイリオ"><BR>
+      <iframe width="420" height="315" src="http://www.youtube.com/embed/J-4G2RdgPRc" frameborder="0" allowfullscreen></iframe>
+      <BR>
+      <BR>
+      </FONT><FONT face="メイリオ" size="+1" style="font-size : 117%;">ディスクアクセスやウィンドウ操作を行わない内部処理だけを行うアプリがあったとして、それを実行した場合、逆にCPU使用率が１００％近くならないといけないのです。<BR>
+      そうでなければ、そのプログラムにはCPUを開放してしまう<B>欠陥</B>がある事になります。<BR>
+      これはアプリケーションの動作確認テストの一つとして実際に行われることがあります。<BR>
+      <BR>
+      <B>(３DゲームのCPU依存度)</B><BR>
+      ３Dゲームの場合、マイクロソフトが提唱しているDirectXのDirect3Dと言われるプログラムの命令群を利用しています。<BR>
+      非常に分かりずらい概念ですが、相当噛み砕いていうと、「ゲームのキャラクタを右斜め上40度に１０％移動しなさい」という命令が既に決められているみたいな感じ...相当強引。<BR>
+      実際は３Dコンピュータグラフィックの細かい技術に応じた命令が信じられないくらい沢山用意されている。<BR>
+      DirectXは命令の形を決めているだけであって、それを実行して最終的にディスプレイに表示するのはグラフィックボードが処理するのです。<BR>
+      グラフィックボードのパッケージに書いてあるでしょ「DirectX 11対応」とか。<BR>
+      ３Dコンピュータグラフィックに「動的全方位シャドウマッピング」というのがあって、「<A href="https://sites.google.com/site/monshonosuana/directxno-hanashi-1/directx-104" target="_blank">ここ</A>」に実際の画像とプログラムのコードが書かれています。<BR>
+      見ても全然分からんけどね、「Deferred Rendering」と言う命令を使うらしい。<BR>
+      光源はどこにあってオブジェクトの形（下図ではドーナツ型）はどんなんで、その形の影はこんな風にできるはず的な事を計算して表示しています。<BR>
+      3DゲームはこういったDirectXを使ったプログラムで作成されていて、下図の様な画像をグリグリ動かすのは、実は「演算」していて１秒間に十数回表示しているのです。<BR>
+      ３Dの絵が動く仕掛けはアニメと似ているけど、アニメのセル画に相当するものはグラフィックカードが「演算」で作成してディスプレイに表示しています。<BR>
+      なので綺麗な画像（高い解像度）で沢山グリグリするゲームほどグラフィックカードにはとても高い演算処理能力が必要なのです。<BR>
+      <IMG src="fig104_01.jpg" width="448" height="336" border="0"><BR>
+      ゲームの場合は動画がスムースに描画されないとかマウス、キーボードの反応が遅い、たとえばキャラの動きが鈍かったり、トリガを引いたのにマシンガンの発射が遅れたりとか、プレイに支障をきたす状態が「能力不足」と言えるでしょう。<BR>
+      <BR>
+      <B>(ネットワーク処理のCPU依存度)</B><BR>
+      ３DゲームよりはるかにCPU依存度は低くなります。<BR>
+      ニコ生みたいなストリーミング配信やYouTubeのようなストリーミング受信＆再生は、Celeronだろうがｉ７だろうが性能差はゼロと考えてよいです。<BR>
+      むしろ、無線最適化やWIndowsのTCP/IP通信の最適化(MTUの調整)で変わります。<BR>
+      あとニコ生は程度の低いウェブカムだとカメラ－PC間でさえ遅延(レイテンシと言います)が発生します。<BR>
+      特にドライバの出来が悪い製品はひどいです。<BR>
+      Logicoolの少しハイエンド製品を選択した方が良いと思います。<BR>
+      無線LAN、無線Internet（EMOBILE、iPhone５テザリング）は性能測定を予定しています。<BR>
+      <BR>
+      <B>(速いCPUは熱い、マルチコアとTDP(設計最大方熱量)）</B><BR>
+      IntelはWidowsが本格的に普及し始めたころに発売した「Pentium」からCPUの能力を向上させる基本技として動作クロックを上げて続けてきました。<BR>
+      CPUにはは<A href="http://e-words.jp/w/TDP.html" target="_blank">ＴＤＰ(設計最大放熱量)</A>と言う特性があり、クロック数が高いほど発熱量が高くなります。 <BR>
+      すなわち発熱温度が高いってこと。<BR>
+      動作クロックはエンジンの回転数みたいなもんで、数値が高いほどCPUの能力が高い事になります。<BR>
+      (マルチコアは適応外ですので注意）<BR>
+      しかしながらクロックを上げ続けた結果、発熱が製品として限界を迎えてしまい「Pentium」は「４」、「Pentium４」で終焉しました。<BR>
+      CPUファンの音がうるさいから処理能力の高いCPUにすると言うのは、真逆の間違ったとらえ方です。<BR>
+      マザーボードにはCPUの温度センサーが付いていて、高温になるとファンの回転数を上げる機能や、限界を超えると故障を防ぐためシャットダウンする機能があります。<BR>
+      勿論、この機能はオフにすることが出来るけど。<BR>
+      能力の高いＣＰＵになるほど熱対策への配慮が必要です。<BR>
+      IntelのCPUをBOXで購入するとヒートシンク＆ファンが付属してます。<BR>
+      多分CeleronからCore ｉ７まで同じもので、新品のファンは殆ど無音です。<BR>
+      ですが、このファンの寿命は１日８時間程度の稼働であれば２~３年で故障します。<BR>
+      大抵、ベアリングが劣化して異音が発生し、そのうち回転停止します。ＣＰＵファンは消耗品です。<BR>
+      <BR>
+      発熱について、昔、自分でちょっとした実験を行ったことがあります。<BR>
+      別に性能を計測をするためではなくて、オークションに「Pentium４」（<A href="http://ja.wikipedia.org/wiki/Pentium_4#Prescott.EF.BC.88.E3.83.97.E3.83.AC.E3.82.B9.E3.82.B3.E3.83.83.E3.83.88.EF.BC.89" target="_blank">Prescottと言う世代</A>）を出品するための動作確認テストです。<BR>
+      もともと「Celeron」を積んでいたパソコンでCPUを「Pentium４」を交換してテストします。<BR>
+      CPUを交換するには冷却用のヒートシンク（ファン付）を外さなければなりません。<BR>
+      </FONT>
+      <DIV style="color: rgb(34, 34, 34); font-family: arial; font-size: small; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;">
+      <DIV><FONT size="+1">ヒートシンク＆ファンを外しても「</FONT><FONT face="メイリオ" size="+1" style="font-size : 117%;">Celeron」はすんなり起動して、しばらく放置してもCPUは手で触れるほどの温度。</FONT><FONT size="+1"><BR>
+      </FONT><FONT face="メイリオ" size="+1" style="font-size : 117%;">「Pentium４」の発熱がハンパなく、ヒートシンク＆ファン無しでは発熱しすぎて一切動作しないのです。<BR>
+      </FONT><FONT size="+1">それを知らずして、電源オン！</FONT></DIV>
+      </DIV>
+      <div style="color: rgb(34, 34, 34); font-family: arial; font-size: small; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;"><FONT face="メイリオ" size="+1" style="font-size : 117%;">「Pentium４」は起動後１秒でフリーズ、CPUも電源ON直後でも火傷するほど１秒で約８０℃まで一気に高温になります。<BR>
+      クロックが上がるとこんなに凄まじく温度があがって、ヒートシンク＆ファンを付けないと正常に動作しないのですよ。<BR>
+      能力の高いCPUはヒートシンクやファンを小さく出来るとかファンの回転数を落とすことが出来るわけではありません。<BR>
+      アイドル時（なんもアプリを動かしていない状態でも）下位のCPUより熱いので、より冷却を配慮しないといけないのです。<br>
+      </FONT></div>
+      <div style="color: rgb(34, 34, 34); font-family: arial; font-size: small; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px;"><FONT face="メイリオ" size="+1" style="font-size : 117%;">ちなみに現行世代のCpre iシリーズはクアッドコア（４コア）ですが、次世代は<A href="http://pc.watch.impress.co.jp/docs/2009/0212/kaigai490.htm " target="_blank">オクタコア（８コア）</A>になります。</FONT></div>
+      <FONT face="メイリオ" size="+1" style="font-size : 117%;"><BR>
+      <B>(nVIDIA GeForceのリファレンス）<BR>
+      </B>nVIDIA（会社）はビデオカードの完成品を製造していません。（たぶん）<BR>
+      製造はGForceのGPUを使って台湾メーカーを中心に沢山のメーカーから発売しています。<BR>
+      ｎVIDIAはGeForceの「リファレンスデザイン」を出しています、いわゆる設計図ですな。<BR>
+      この「リファレンスデザイン」に基づく製品のみ認めており、独自の設計を認めていません。<BR>
+      ですからGeForceのチップとVRAMサイズが同じであれば、どのメーカーの製品でも理論上は性能は変わらないと言う事になります。<BR>
+      グラフィックチップ以外の電子部品や多層化ボードの品質や冷却性は異なり、価格差が発生している模様で、後はおまけソフトの有無やその内容で差別化を図っているのではないでしょうか？<BR>
+      <BR>
+      <B>(昔はビデオカードの会社が沢山あった）</B><BR>
+      Windows95、98時代、マザーボードにグラフィック機能はなく（現世代はCPUにグラフィック機能を持っていて、マザーボードと連携してます）、自作パソコンを組む場合、必ずグラフィックボードを購入しなければなりませんでした。<BR>
+      覚えているだけメーカーを列挙してみよう、なつかしいなぁ。<BR>
+      <BR>
+      <B>3dfx</B> <BR>
+      「<SPAN style="color: rgb(0, 0, 0); font-family: sans-serif; font-size: 15px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 22.640625px; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none;">Voodoo」</SPAN>(ブードゥー)と呼ばれる製品で一時代席巻した。今のｎVIDIAみたいな存在感で専用ゲームが沢山あったがATIのRADEON、nVIDIAのGeForceに敗れてnVIDIAに買収。<BR>
+      <B>Matrox </B><BR>
+      いまも存在している会社、これも一時期「Millennium」で人気があったが、ここ十年製品を見かけたことはない。<BR>
+      ちなみに私、MillenniumIIをまだ使ってます。<BR>
+      <B>S3 Graphics</B><BR>
+      「ViRGE」と言うチップで何社かの国産PCに採用されていたと思います、VIAに買収。<BR>
+      <B>VIA Technologies</B><BR>
+      S3を買収したもののグラフィックボード単体の製品は（恐らく）無い。Intel互換の統合チップセットにビデオの技術がひきつがれている模様。<BR>
+      しかしながらVIAのチップセットもめっきり見かけることが少なくなった。<BR>
+      <B>カノープス</B><BR>
+      社名を「グラスバレー」とし、PC周辺機器メーカーとして現存。<BR>
+      Ｓ３やnVIDIAのチップを使って「リファレンスデザイン」(重要、後述）を否定して高画質のビデオカードを独自設計していた頑固な会社。<BR>
+      ｎVIDIAは「リファレンスデザイン」を認めていないのでビデオカード事業から撤退。<BR>
+      S3を使った「PowerWindow」と言うビデオカードを持っています。<BR>
+      <B>ATI Technologies</B><BR>
+      「RADEON」でnVIDIAの「GeForce」と戦い続けている。AMDに買収されたがブランドと製品はそのまま残っている。<BR>
+      <B>ｎVIDIA</B><BR>
+      ATIとのし烈な争いを展開中であるがゲーマーPCではアタマ３つくらい抜きんでた感じ。<BR>
+      GeForceが出る前まではATIの方が売れていたような気がする。<BR>
+      nVIDIAは今やグラフィックボードメーカーではありません。<BR>
+      Intelと並び汎用プロセッサメーカーですね。<BR>
+      世界最速の富士通 スーパーコンピュータのCPUも「GeForce」だし。<BR>
+      スマホやAndroidタブレットでもCPU「<A href="http://ja.wikipedia.org/wiki/NVIDIA_Tegra" target="_blank">Tegra</A>」が採用されていますしね。<BR>
+      Intelと同じで製品の供給責任のあるメーカーになってしまったから、製品開発は留まることはありません状態。<BR>
+      </FONT><BR>
+      <BR>
+      </div>
+      </TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</CENTER>
+</BODY>
+</HTML>

@@ -1,0 +1,112 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="IBM WebSphere Studio Homepage Builder Version 12.0.5.0 for Windows">
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<META http-equiv="Content-Style-Type" content="text/css">
+<TITLE>ブログ</TITLE>
+</HEAD>
+<BODY>
+<P align="center"><IMG src="../2012-12-29/banner.jpg" width="832" height="84" border="0"></P>
+<CENTER>
+<TABLE border="0" cellpadding="0" cellspacing="0" id="_HPB_LINK_MENU_TABLE_121117160018" class="hpb-hmenu1">
+  <TBODY>
+    <TR align="center">
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../../index.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">TOP </A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../00_blog_index.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">weblog</A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../../lib/lib.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">TIPS</A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../../myworks/myworks.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">Works</A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../../link.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">リンク</A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</CENTER>
+<CENTER>
+<TABLE border="1">
+  <TBODY>
+    <TR>
+      <TD width="819"  valign="top"><FONT color="#000000" face="メイリオ">2013-03-20 LTEってなに？<BR>
+      <BR>
+      「LTE」はLong Term Evolution（ロング・ターム・エボリューション）の略称です。<BR>
+      一方「３G」はスリー・ジェネレーション「第３世代」のことです。<BR>
+      「世代」「規格」「無線技術」を並べると下図のようになるわけですが、iPhone5では画面上に「３G」か「LTE」って表示されるけど、細かい事言えばちょっと並べる意味がちょっと違う事になります。<BR>
+      でも、そんなことはどうでもいい事で、「３G」の時はネットが遅い、「LTE」は速いと言う事だけ把握していれば良いと思います。<BR>
+      <BR>
+      <IMG src="lte.jpg" width="714" height="262" border="0"><BR>
+      </FONT><FONT face="メイリオ"><BR>
+      LTEは何が進化して速いのか<BR>
+      以下は備忘録、少し技術的な内容を含みます。<BR>
+      <BR>
+      LTEは<A href="http://www.nttpc.co.jp/yougo/RNC.html" target="_blank">無線ネットワーク制御装置(RNC)</A>を持たない。<BR>
+      下図は３Gのネットワーク構成図です。（<A href="http://www.atmarkit.co.jp/ait/articles/0910/21/news115.html" target="_blank">＠IT サービス開始まで1年に迫ったLTEって何？</A> より抜粋）<BR>
+      基地局（ぶちゃけ携帯用のアンテナ設備の事）とRNCは直結しておらず、共用しとるわけです。<BR>
+      ですので複数の基地局からの通信を裁かなければならないわけですので、ここら辺が<A href="http://ja.wikipedia.org/wiki/%E3%83%9C%E3%83%88%E3%83%AB%E3%83%8D%E3%83%83%E3%82%AF" target="_blank">ボトルネック</A>かつ<A href="http://ja.wikipedia.org/wiki/%E3%82%AA%E3%83%BC%E3%83%90%E3%83%BC%E3%83%98%E3%83%83%E3%83%89" target="_blank">オーバーヘッド</A>になります。（あくまでもLTEと比べてのお話しです）<BR>
+      <IMG src="rnc.jpg" width="665" height="388" border="0"><BR>
+      <BR>
+      <B style="text-decoration : underline;">LTEはRNCを使いません</B><BR>
+      LTEでは基地局装置とコアに分散させます<BR>
+      RNCがなくなると「ネットへの接続がめちゃ速くなる」、「仕組みも設備もシンプルになる。(シンプル・イズ・ベスト)」となって３Gより速くなるのです。<BR>
+      その他、３Gから進化した技術について＠ITから丸写ししますが難しいのでよくわかりません。<BR>
+      <BR>
+      <B style="text-decoration : underline;">進化した無線技術進化した無線技術</B><BR>
+      LTEは無線方式には<A href="http://ja.wikipedia.org/wiki/%E7%9B%B4%E4%BA%A4%E5%91%A8%E6%B3%A2%E6%95%B0%E5%88%86%E5%89%B2%E5%A4%9A%E9%87%8D%E6%96%B9%E5%BC%8F#.E7.84.A1.E7.B7.9A" target="_blank">OFDM（Orthogonal Frequency Division Multiplexing）</A>を、変調方式に64QAMを採用しています。<BR>
+      広帯域（20MHz）の周波数帯域幅を使用してもフェージングなどの影響を受けにくくし、周波数利用効率を上げることにより、高スループットを実現しています。<BR>
+      フェージング：無線局の移動や時間経過により、無線局での電波の受信レベルが変動する現象。<BR>
+      <BR>
+      図3　LTEのRF変調<BR>
+      <IMG src="rf.jpg" width="490" height="300" border="0"><BR>
+      OFDMの特長を生かした周波数軸と時間軸の両方を使用したスケジューリング(ユーザーへのチャネル割り当て)を行うことにより、ユーザーの無線環境に応じて柔軟に帯域割り当てを行い基地局当たりのスループットを確保しています。<BR>
+      LTEは次の特性を実現しています。<BR>
+      </FONT>
+      <TABLE border="1">
+        <TBODY>
+          <TR>
+            <TD><FONT face="メイリオ">ピークデータ速度</FONT></TD>
+            <TD><FONT face="メイリオ">
+      ダウンリンク 173Mbps<BR>
+      アップリンク 58Mbps（20MHz、2x2 MIMOの場合）</FONT></TD>
+          </TR>
+          <TR>
+            <TD><FONT face="メイリオ">柔軟な周波数帯域幅</FONT></TD>
+            <TD><FONT face="メイリオ">1.4MHz、3MHz、5MHz、10MHz、15MHz、20MHzから選択が可能</FONT></TD>
+          </TR>
+          <TR>
+            <TD><FONT face="メイリオ">低遅延</FONT></TD>
+            <TD><FONT face="メイリオ">10～20msec</FONT></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      <FONT face="メイリオ"><BR>
+      <B style="text-decoration : underline;">プロトコルスタックの単純化</B><BR>
+      ＬＴＥではＲＮＣがなくなったことによりプロトコルも単純化されています。<BR>
+移動体通信のプロトコルスタックなんて一切知らないけど、どこかの層がすっぽりなくなるとか単純化されるということは通信速度の向上につながる程度は分かるような気がします。<BR>
+<BR>
+      <B style="text-decoration : underline;">オールＩＰによる帯域利用の効率化</B><BR>
+      LTEでは音声もVoIP（Voice over IP）としてパケット化し、すべてパケットネットワークとしています。<BR>
+      ３ｇｄｅｈａ固定的に帯域を割り当てる回線交換方式ですので、それに比べるとパケット交換方式は柔軟に帯域を割り当てることができるので周波数帯を効率よく利用できます。（実質的には同時通話数が増える）<BR>
+      <BR>
+      ＬＴＥの導入<BR>
+      一番左が３Ｇ（3GPP リリース6）の構成で、現在のW-CDMAのシステムです。<BR>
+      ネットワーク制御の信号もユーザーデータの制御信号も、すべてのノードを通過します。<BR>
+      各ノードでネットワーク制御系とユーザーデータ系の制御信号処理を行うため、接続遅延が発生するという問題があります。<BR>
+      右がＬＴＥでネットワーク構成がシンプルになってます。<BR>
+      <IMG src="netg.jpg" width="264" height="250" border="0"><BR>
+      <BR>
+      ３Ｇのネットワーク構成図です、まあまあ分かりやすいですよね、無線ネットワーク制御装置がＲＮＣのことです。<BR>
+      <IMG src="3gnet.jpg" width="718" height="427" border="0"><BR>
+      <BR>
+      下図はLTEの簡易な構成図です。（<A href="http://www.hitachi.com/products/it/network/mobile/products/ER5000/LTE/index.html" target="_blank">日立のLTEシステムの製品ページ(英語) より抜粋</A>）<BR>
+      <IMG src="hitach-mme.jpg" width="570" height="401" border="0"><BR>
+      <BR>
+      こういった技術の進化によって３G、３．５Gに比べて数十倍のネットワーク速度の向上しLTEが速くなっているのです。<BR>
+      主にハードウェアの技術革新によってLTEが速い、と、概要だけは理解したつもり。<BR>
+      (参考）<A href="http://www.itmedia.co.jp/mobile/0309/19/n_yoyogi.html" target="_blank">FORMAを支えるドコモタワー（少し古い記事）</A><BR>
+      <BR>
+      </FONT></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</CENTER>
+</BODY>
+</HTML>

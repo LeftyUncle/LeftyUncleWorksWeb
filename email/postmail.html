@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="Shift_JIS"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=Shift_JIS" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta name="GENERATOR" content="IBM WebSphere Studio Homepage Builder Version 12.0.5.0 for Windows" />
+<style type="text/css"><![CDATA[
+<!--
+body { font-size:80%; background:#fff; color:#000; }
+table.form { border:1px solid #7777bb; border-collapse:collapse; margin-top:1em; }
+table.form th,td { text-align:left; border:1px solid #7777bb; padding:8px; font-weight:normal; }
+table.form th { background:#cccce6; }
+table.form td { background:#f0f0f0; }
+strong.ttl { text-align:left; border-left:solid 4px #cc0000; display:block; padding:2px 5px; margin-top:2em; }
+-->
+]]></style>
+<title>お問い合わせフォーム</title>
+</head>
+<body>
+<p><img src="../banner.jpg" width="800" height="84" border="0" /></p>
+<table border="1">
+  <tbody>
+    <tr>
+      <td width="772">
+      <blockquote>
+      <form action="postmail.cgi" method="post">
+<input type="hidden" name="need" value="name email 問合せ種別" />
+<input type="hidden" name="match" value="email email2" />
+      <table summary="問合せフォーム" class="form" width="722">
+<tbody>
+          <tr>
+            <th style="text-align : left;" align="left" width="91"><font face="メイリオ">お名前</font></th>
+            <td width="583"><input type="text" name="name" size="35" /></td>
+          </tr>
+          <tr>
+            <th style="text-align : left;" align="left" width="91"><font face="メイリオ">メール<br />
+            アドレス</font></th>
+            <td width="583">
+		<input type="text" name="email" size="35" /><br />
+		<input type="text" name="email2" size="35" />（再度入力）
+	</td>
+          </tr>
+          <tr>
+            <th style="text-align : left;" align="left" width="91"><font face="メイリオ">問合せ種別</font></th>
+            <td width="583"><input type="radio" name="問合せ種別" value="ご質問" />ご質問<br />
+		<input type="radio" name="問合せ種別" value="ご相談" />ご相談<br />
+		<input type="radio" name="問合せ種別" value="ご感想" />ご感想<br />
+		<input type="radio" name="問合せ種別" value="ご依頼" />ご依頼<br />
+		<input type="radio" name="問合せ種別" value="その他" />その他
+	</td>
+          </tr>
+          <tr>
+            <th height="168" width="91"><font face="メイリオ">問合せ内容</font></th>
+            <td height="168" width="583"><textarea name="メッセージ" rows="11" cols="84"></textarea></td>
+          </tr>
+</tbody>
+      </table>
+      <br />
+<input type="submit" value="送信する" /><input type="reset" value="リセット" />
+</form>
+      <strong class="ttl">個人情報の取扱いについて</strong>
+<ol>
+<li>ご記入いただいた個人情報は、お問い合わせへの対応および確認のためのみに利用します。</li>
+<li>また、この目的のためにお問い合わせの記録を残すことがあります。</li>
+</ol>
+</blockquote>
+</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

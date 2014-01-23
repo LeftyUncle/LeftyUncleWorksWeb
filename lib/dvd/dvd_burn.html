@@ -1,0 +1,177 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="IBM WebSphere Studio Homepage Builder Version 12.0.5.0 for Windows">
+<META http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<META http-equiv="Content-Style-Type" content="text/css">
+<TITLE>DVD複製(リッピング＆ライティング）</TITLE>
+<LINK rel="stylesheet" type="text/css" href="table.css" id="_HPB_TABLE_CSS_ID_">
+</HEAD>
+<BODY>
+<P align="center"><IMG src="../../banner.jpg" width="829" height="84" border="0"></P>
+<CENTER>
+<TABLE border="0" cellpadding="0" cellspacing="0" id="_HPB_LINK_MENU_TABLE_121117160018" class="hpb-hmenu1">
+  <TBODY>
+    <TR align="center">
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../../index.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">TOP </A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../../blog/00_blog_index.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">weblog</A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../lib.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">TIPS</A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../../myworks/00_myworks_index.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">Works</A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../../link.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">リンク</A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</CENTER>
+<CENTER>
+<TABLE border="1">
+  <TBODY>
+    <TR>
+      <TD width="819" height="1352"><FONT face="メイリオ"><A name="0"><B><FONT size="+1">DVD複製</FONT>(リッピング＆ライティング）</B><BR>
+      </A><BR>
+      </FONT><FONT face="メイリオ" size="+1"><A href="#1">(1)初めに</A><BR>
+      <A href="#2">(2)市販DVDの構造</A><BR>
+      (<A href="#3">3)DVD-Rはなぜ複製できるの？</A><BR>
+      <A href="#4">(4)市販（レンタル）DVDは暗号化されているので複製できないはずなのですが....</A><BR>
+      <A href="#5">(5)リッピングと言う用語</A><BR>
+      <A href="#6">(6)DVDの中に入っているフォルダとファイル</A><BR>
+      <A href="#7">(7)市販DVDをDVD-Rに複製する手順</A><BR>
+      <A href="#8">(8)DVDShrinkの操作説明（リッピング）</A><BR>
+      <A href="#9">(9)DAEMON TOOLS Lite（仮想DVDドライブ装置）の解説と操作</A><BR>
+      <A href="#10">(10)DVD-Rへの書き込み（バーニング）</A><BR>
+      </FONT><FONT face="メイリオ"><BR>
+      <BR>
+      <A name="1">(1)</A><BR>
+      市販品やレンタルDVDを借りてきて同じ映像をDVDプレイヤーやパソコンで繰り返し見たい。<BR>
+      そのためには、あったりまえですが「複製」をしなければなりません。<BR>
+      昔、<A href="http://ja.wikipedia.org/wiki/%E5%A4%AA%E9%99%BD%E8%AA%98%E9%9B%BB" target="_blank">太陽誘電</A>と言う日本の会社がCD（コンパクトディスク）を複製するための技術を開発しました。<BR>
+      これが「CD-R」です。<BR>
+      CD-Rの技術は瞬く間に浸透し、DVD-R、BD-R（ブルーレイ）へと進化しています。<BR>
+      ここでは映像コンテンツで一番沢山流通しているDVDの「複製」について解説します。<BR>
+      CDもBDの複製も使うソフトウェアやメディアが異なるだけで基本的な考え方は一緒です。<BR>
+      <A href="#0">-戻る-</A><BR>
+      <BR>
+      <A name="2">(2)</A><BR>
+      DVDーRも仕組み。<BR>
+      ヤマダ電機やツタヤでDVD-Rが販売されていますが、なぜそれに複製ができるか簡単に解説します。<BR>
+      難しいことは管理人もわからないのです。<BR>
+      まず、市販のDVDの顕微鏡写真をご覧ください。<BR>
+      <IMG src="image.jpg" width="660" height="189" border="0"><BR>
+      ボコボコとしているのは「ピット(穴)」と呼ばれるもので、DVDドライブは回転しているDVDにレーザー光線をチョー正確に照射しごくわずかな明暗をデジタルデータとして読み取るのです。<BR>
+      (私はこれがなぜ音楽や映像になるのかは理解しようとしません。）<BR>
+      <A href="#0">-戻る-<BR>
+      </A><BR>
+      <A name="3">(3)</A><BR>
+      複製をするわけですから上の顕微鏡写真と同じようにデコボコを同じにしなければなりません。<BR>
+      売っているDVD-Rには「有機色素」つーのが塗られていて、強いレーザー光線を当てると同じようにデコボコ「ピット」を形成できるようになっているのです。<BR>
+      市販のCDやDVDは「プレス加工」で製造するので綺麗な楕円形をしてますけど、複製し終わったDVD-Rはいびつな形になります。（むかしは顕微鏡写真があったんですけど、今は見つかりませんでした、残念）<BR>
+      余談ですが昔はDVD-Rの品質が悪くDVDドライブ装置の製造技術も未熟だったので、ピットの形がいびつ（汚い形）だったり、コピー元とは違うデータとして読み取られるような事が多々あって、再生すると途中で映像が止まったり、ノイズが入ったり、映像が飛んだりしました、最近は技術革新のおかげでそういったエラーは相当少なくなりました。<BR>
+      パソコンのファイルをDVD-Rにレーザー光線照射をコントロールするソフトを「ライティングソフト」と言います。<BR>
+      (まあ、実際のところレーザー光線の制御はDVDドライブ装置がやってるんですけどね、ライティングソフトはその仲介役みたいなソフトです)<BR>
+      <A href="#0">-戻る-<BR>
+      </A><BR>
+      <A name="4">(４)</A><BR>
+      市販の映像DVD（DVD-Video）には「<A href="http://ja.wikipedia.org/wiki/Content_Scramble_System" target="_blank">CSS</A>」と言う複製防止用の暗号化が施されています。<BR>
+      単純な４０ビットの暗号キーによる暗号化なんですけどアホな会社があって、暗号キーをそのまま隠さずDVD再生ソフトに組み込んじゃいました。<BR>
+      1999年、当時16歳だったノルウェーの少年<A href="http://ja.wikipedia.org/wiki/%E3%83%A8%E3%83%B3%E3%83%BB%E3%83%AC%E3%83%83%E3%82%AF%E3%83%BB%E3%83%A8%E3%83%8F%E3%83%B3%E3%82%BB%E3%83%B3" target="_blank">ヨン・レック・ヨハンセン君</A>がそれを解読してDVDの暗号化を解除する技術を公開しちゃったのです。<BR>
+      そこから派生していろいろなDVDコピーソフトが主にフリーソフトとして流通するようになったと言う訳です。<BR>
+      ここではとりわけ使い勝手が良い「DVDShrink（ディーブイディーシュリンク）」を使ったコピー方法を紹介します。<BR>
+      <A href="#0">-戻る-<BR>
+      </A><BR>
+      <A name="5">(5)</A><BR>
+      「リッピング」とは、DVDや音楽CDなどに記録されているデジタルデータを、そっくりそのままの形またはイメージファイルでパソコンに取り込むか、パソコンで扱いやすいデータの形に変換して、ファイルにすることです。<BR>
+      <A href="#0">-戻る-<BR>
+      </A><BR>
+      </FONT><FONT face="メイリオ" size="+1"><A name="6">(6)</A><BR>
+      DVD-Videoの中身の説明です。<BR>
+      市販DVDはどのメーカーのプレイヤーでも再生できるようディレクトリ構造、ファイル名、ファイルの構造は規格にのっとって作られています、当たり前。<BR>
+      異なるのは連番のついたファイルの数とファイルのサイズ。<BR>
+      長編の映画もあれば短編の映画もあるし吹き替え音祭が入っていたり、いなかったり。<BR>
+      DVDーVideoは必ず「VIDEO＿TS」と言うフォルダがトップディレクトリにあって、その中にはBUP、IFO、VOBの３種類の複数ファイルで構成されています。<BR>
+      (拡張子とはファイル名のピリオドを含む３文字（4文字もたまにある「.html」の事です、チョー重要用語）<BR>
+      DVDのファイル形式は「<A href="http://haring.bizz.st/dvd-kowaza/faq/faq_kousei.htm" target="_blank">DVD VideoのFile構成について</A>」が詳しいです、僕も初めて見ました。<BR>
+      DVDの中身を拝見したビデオです、沢山のファイルが入っているよ、それだけのビデオです。<BR>
+      <IFRAME width="420" height="315" src="http://www.youtube.com/embed/awrX5KiTwbE" frameborder="0" allowfullscreen></IFRAME>
+      <BR>
+      <BR>
+      <A href="#0">-戻る-<BR>
+      </A><BR>
+      <A name="7">(7)</A><BR>
+      DVDの複製手順です。<BR>
+      </FONT>
+      <TABLE border="1" cellspacing="0" cellpadding="2" id="_HPB_TABLE_1_A_121218151632" class="hpb-cnt-tb1">
+        <TBODY>
+          <TR>
+            <TH class="hpb-cnt-tb-th1"><FONT face="メイリオ" size="+1" style="font-size : 117%;">順番</FONT></TH>
+            <TH class="hpb-cnt-tb-th1"><FONT face="メイリオ" size="+1" style="font-size : 117%;">ソフトウェア&nbsp;</FONT></TH>
+            <TH class="hpb-cnt-tb-th1" width="576"><FONT face="メイリオ" size="+1" style="font-size : 117%;">&nbsp;説明</FONT></TH>
+          </TR>
+          <TR>
+            <TD class="hpb-cnt-tb-cell1" align="center"><FONT face="メイリオ" size="+1" style="font-size : 117%;">&nbsp;１</FONT></TD>
+            <TD class="hpb-cnt-tb-cell2"><FONT face="メイリオ" size="+1" style="font-size : 117%;">&nbsp;DVD Shrink 3.2</FONT></TD>
+            <TD class="hpb-cnt-tb-cell2" width="576"><FONT face="メイリオ" size="+1" style="font-size : 117%;">&nbsp;コピーしたいレンタルＤＶＤをＤＶＤドライブ装置の中に入れてます。<BR>
+            特典映像をカットする・しないとか、圧縮するしないの設定を行います。<BR>
+            バックアップ（リッピング）を行います。</FONT></TD>
+          </TR>
+          <TR>
+            <TD class="hpb-cnt-tb-cell1"><FONT face="メイリオ" size="+1" style="font-size : 117%;">２&nbsp;</FONT></TD>
+            <TD class="hpb-cnt-tb-cell2"><FONT face="メイリオ" size="+1" style="font-size : 117%;">&nbsp;DAEMON Tools Lite</FONT></TD>
+            <TD class="hpb-cnt-tb-cell2" width="576"><FONT face="メイリオ" size="+1" style="font-size : 117%;">&nbsp;DVD ShrinkでリッピングしたISOイメージファイルを仮想ＤＶＤドライブ装置に<BR>
+            「マウント」します。</FONT></TD>
+          </TR>
+          <TR>
+            <TD class="hpb-cnt-tb-cell1"><FONT face="メイリオ" size="+1" style="font-size : 117%;">&nbsp;３<BR>
+            </FONT></TD>
+            <TD class="hpb-cnt-tb-cell2"><FONT face="メイリオ" size="+1" style="font-size : 117%;">&nbsp;Roxio Creater LJ</FONT></TD>
+            <TD class="hpb-cnt-tb-cell2" width="576"><FONT face="メイリオ" size="+1" style="font-size : 117%;">&nbsp;ブランクＤＶＤ－ＲメディアをＤＶＤドライブ装置に入れます。<BR>
+            仮想ＤＶＤドライブ装置からブランクＤＶＤ－Ｒにこコピー（複製）します。</FONT><BR>
+            「<FONT face="メイリオ" size="+1" style="font-size : 117%;">Roxio Creater LJ」はライティングソフトで他にも色々とあります。</FONT></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      <B><FONT face="メイリオ"><A href="#0">-戻る-<BR>
+      </A></FONT></B><FONT face="メイリオ" size="+1"><BR>
+      <A name="8">(8)</A><BR>
+      リッピング。<BR>
+      市販のDVDから暗号を解除してパソコンのハードディスクの中にイメージファイルを作成する作業です。<BR>
+      「DVDShrink」を起動します。<BR>
+      管理人のOSはWindows8なのでほかのバージョンのWindows（XPとか７とか）では少し違いますがスタートボタンから「DVDShrink」を起動します。<BR>
+      ディスクトップにアイコンが張り付けてればダブルクリックで起動しても構いません。<BR>
+      DVDShrinkの簡単な操作説明ガイドです。<BR>
+      とりあえずフルサイズで見て下さい。そのあと詳細説明します（の、予定）<BR>
+<IFRAME width="640" height="480" src="http://www.youtube.com/embed/F_KZ1-y8vaY" frameborder="0" allowfullscreen></IFRAME>      
+<BR>
+      <A href="#0">-戻る-<BR>
+      </A><BR>
+      <A name="9">(9)</A><BR>
+      DVDShrinkで市販DVDの内容すべてが「暗号が解除されて」ISOイメージファイルになりました。<BR>
+      次はこの「暗号が解除されて複製可能な」ISOイメージファイルを仮想のDVDに見立てるための手順を解説します。<BR>
+      といってもとっても簡単です。<BR>
+      <IFRAME width="640" height="480" src="http://www.youtube.com/embed/jSgK1IaJsmk" frameborder="0" allowfullscreen></IFRAME>
+      <BR>
+      <BR>
+      <B><A href="#0">-戻る-<BR>
+      </A></B><BR>
+      <A name="10">(10)</A><BR>
+      DVD-RやCD-Rに映像や音楽を書き込むことを「バーニング」とか言ったりします。<BR>
+      レーザー光線でジリジリと雪色素を焦がして削るからそう言う言い方をするんでしょう、きっと。<BR>
+      でも書き込むソフトは「バーニングソフト」とは言わない。<BR>
+      他にも読み込んだりする機能もあるからでしょう、でも、「ライティングソフト」と言ったりもする。<BR>
+      この辺が初心者を混乱させる要素の一つ。<BR>
+      あまりなじみのない「Roxio Creater」、富士通のノートPCにプリインストールされているソフト。<BR>
+      静止画から無理矢理動画っぽいマニュアルを作ってみました。<BR>
+     <IFRAME width="597" height="336" src="http://www.youtube.com/embed/6Vseq5LetBo" frameborder="0" allowfullscreen></IFRAME>
+      <BR>
+      この操作マニュアルだけでは不十分なのは分かっています。<BR>
+      解説していない用語もあるし、説明もだいぶ端折っていますからね。<BR>
+      でも、「自分でもできるかもしれない。」って、少しでも思ってくれたり、なんかパソコンに興味を持って燃えあえたりすると嬉しい。<BR>
+      作ったかいがあるというものです。<BR>
+      <BR>
+      <BR>
+      </FONT></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</CENTER>
+</BODY>
+</HTML>

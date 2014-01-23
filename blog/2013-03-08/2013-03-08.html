@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="IBM WebSphere Studio Homepage Builder Version 12.0.5.0 for Windows">
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<META http-equiv="Content-Style-Type" content="text/css">
+<TITLE>ブログ</TITLE>
+</HEAD>
+<BODY>
+<P align="center"><IMG src="../2012-12-29/banner.jpg" width="832" height="84" border="0"></P>
+<CENTER>
+<TABLE border="0" cellpadding="0" cellspacing="0" id="_HPB_LINK_MENU_TABLE_121117160018" class="hpb-hmenu1">
+  <TBODY>
+    <TR align="center">
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../../index.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">TOP </A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../00_blog_index.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">weblog</A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../../lib/lib.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">TIPS</A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../../myworks/myworks.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">Works</A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../../link.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">リンク</A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</CENTER>
+<CENTER>
+<TABLE border="1">
+  <TBODY>
+    <TR>
+      <TD width="819"  valign="top"><FONT color="#000000" face="メイリオ">2013-03-03 ソフトバンクさんはなりすましメールの対策は教えてくれない<BR>
+      <BR>
+      ソフトバンクではMySoftbankで「なりすましメール⇒受け取らない(拒否設定する)」と言う設定がありますが機能しているのか、していないのか、よくわかりません。<BR>
+      個人的な見解としては機能していないように思います。<BR>
+      ソフトバンクさんの言うところの「なりすましメール」ってなんですか？、１５７で聞いたら「ご案内できません」と断られてしまいました。<BR>
+      秘密なのか、回答能力がないのか、恥ずかしくて言えないのか、その辺は分かりませんけど。<BR>
+      </FONT><FONT face="メイリオ">３月２日あたりから、iPhone5に迷惑メールが日に５件くらい送信されて来るようになりました。<BR>
+      本文の内容は殆ど同じなんですけどドメインとも毎回異なっていてるメールアドレスになっています。<BR>
+      <BR>
+      電子メールには差出人のアドレスは「ヘッダ」と「エンベロープ(envelope)」の２か所にあります。<BR>
+      「envelope」は直訳すると「封筒」となります。<BR>電子メールのエンベロープはメールの送信と受信を行うメールサーバーがメール本体に付加するデータで、郵便に例えると封筒に書かれている宛先住所氏名と差出人住所氏名と基本的には同じ役割をします。<BR>
+      実際の郵便と違うのはメール本文にも宛先住所氏名と差出人住所氏名が書かれていて、<B style="text-decoration : underline;">宛先の人にメールを届ける時は封筒を捨ててしまうのです。</B><BR>
+ですからメールソフトではエンベロープを直接これを見ることは出来ません。<BR>
+ですがメールヘッダの「Received：」フィールドに内容が記録されていることがあります。<BR>
+      画面に表示されている差出人は「ヘッダ」と言われるところで、ここを書き換えることは技術的には簡単でが、まともなプロバイダやメールサービスを提供している会社は偽装されないようにしています。<BR>
+      ですからなりすましメールは完全に悪意がないと送信されません。<BR>
+      エンベロープは見ることが出来ませんが、各携帯電話会社では受信メールのメールヘッダーを見るサービスを提供していて、なりすましメールかどうかある程度判断できます。<BR>
+      下はなりすましメールをソフトバンクのEメールヘッダ閲覧サービスで観察した例です。<BR>
+      <IMG src="image.jpg" width="765" height="536" border="0"><BR>
+      <FONT face="メイリオ"><BR>
+      上図の2013-03-07 22:55 のメールを参照してみました。<BR>
+      <BR>
+      メールソフトで表示される部分<BR>
+      </FONT></FONT>
+      <TABLE border="1">
+        <TBODY>
+          <TR>
+            <TD width="750"><FONT face="メイリオ"><FONT face="メイリオ">差出人 :◇残高900万◇オンライン-通帳サービス- &lt;mail@bG5z4H.4u5gj.net&gt; (return-166674588@bay41L.4u5gj.net)<BR>
+            件名 : ※口座強制解約※　オンライン口座の残高がそのまま放置されております　<BR>
+            　　　◇注意◇回答がない場合は他サイト内の送金手続きを全て停止にさせて頂きます▼<BR>
+            受信日時 : Thu, 7 Mar 2013 22:55:05 +0900 (JST)<BR>
+            </FONT></FONT></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      <FONT face="メイリオ"><BR>
+      メールヘッダ<BR>
+      メールソフトでは通常隠されている部分、パソコンのメールソフトは大抵見る機能があります。<BR>
+      スマホのメールソフトでは大抵見ることが出来ないです。<BR>
+      </FONT>
+      <TABLE border="1">
+        <TBODY>
+          <TR>
+            <TD width="750"><FONT face="メイリオ">Received: from 103x245x16x84.pararola.net ([103.245.16.84])<BR>
+                      by bbmts09sb.softbank.ne.jp with SMTP<BR>
+                      id &lt;2xxxxxxxxxxxxxxx9.MSE.5086@bbmts09sb.softbank.ne.jp&gt;<BR>
+                      for &lt;xxxxxxxxxxx@softbank.ne.jp&gt;;<BR>
+                      Thu, 7 Mar 2013 22:55:15 +0900<BR>
+            Received: from 103.245.16.90 (103x245x16x64.pararola.net [103.245.16.64])<BR>
+            by 103x245x16x90.pararola.net (Postfix) with SMTP id 3D2642ACE296<BR>
+            for &lt;xxxxxxxxxxx@softbank.ne.jp&gt;; Thu, 07 Mar 2013 10:55:05 +0900 (JST)<BR>
+            Received: from 103.245.4.21 (unknown [103.245.4.21]) by 103x245x16x63.pararola.net (Postfix) <BR>
+            with ESMTP id 2B0825F8025 for &lt;xxxxxxxxxxx@softbank.ne.jp&gt;; Thu,  <BR>
+            7 Mar 2013 22:55:05 +0900 (JST)<BR>
+            </FONT></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      <FONT face="メイリオ">
+      [Received:]　メールの送信経路情報、[from]メール送信元のサーバー、もしくはパソコンの名前、[by]メール送信先（Eメールを受け取った）サーバー、もしくはパソコンの名前。<BR>
+      [Received:]が複数ある場合は、下から上の順番でメールが経由・送信されたことを示します。<BR>
+      <BR>
+      画面に表示されているアドレスのドメインは「bG5z4H.4u5gj.net」。<BR>
+      ヘッダーの送信元ドメインは「103x245x16x84.pararola.net ([103.245.16.84])」、カッコ内はIPアドレスです。<BR>
+      この様に送信元メールアドレスを詐称してますので「なりすまし」メールと言えるでしょう、<BR>
+      送信元メールアドレスがドメインごと毎回変わるわけですから受信拒否フィルター出来ません。<BR>
+      au、docomoは「なりすまし」の定義をはっきりウェブサイトに記述していて設定で受信拒否出来るようにしています。<BR>
+      ソフトバンクさんは未熟だね、なりすましの定義も一切触れていないし電話で問い合わせても教えてくれない。<BR>
+      <A href="http://www.au.kddi.com/service/email/support/meiwaku/email_boshi/filter/narisumashi/index.html" target="_blank">「ａｕの迷惑Eメール防止方法」の解説はそのまんまです。</A><BR>
+      <BR>
+      迷惑メールは以下のサイトに転送するとなにかしてくれるらしいです、しつこい迷惑メールは報告してみよう。<BR>
+      <A href="http://www.dekyo.or.jp/soudan/ihan/index.html" target="_blank">迷惑メール相談センター （日本データ通信協会）</A><BR>
+      <BR>
+      <BR>
+      </FONT></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</CENTER>
+</BODY>
+</HTML>

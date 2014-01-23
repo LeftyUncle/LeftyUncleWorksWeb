@@ -1,0 +1,171 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="IBM WebSphere Studio Homepage Builder Version 12.0.5.0 for Windows">
+<META http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<META http-equiv="Content-Style-Type" content="text/css">
+<TITLE>Windows Media Player Plugin インストール及び動作確認</TITLE>
+<LINK rel="stylesheet" type="text/css" href="table.css" id="_HPB_TABLE_CSS_ID_">
+</HEAD>
+<BODY>
+<P><IMG src="../../banner.jpg" width="829" height="84" border="0"></P>
+<TABLE border="0" cellpadding="0" cellspacing="0" id="_HPB_LINK_MENU_TABLE_121117160018" class="hpb-hmenu1">
+  <TBODY>
+    <TR align="center">
+      
+<TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../../index.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">TOP </A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../../blog/00_blog_index.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">weblog</A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../lib.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">TIPS</A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../../myworks/00_myworks_index.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">Works</A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT size="+3"><A href="../../link.html" style='font-family:"メイリオ";' class="hpb-hmenu1-link1" target="_self">リンク</A></FONT></TD>
+      <TD style="background-repeat:no-repeat;" class="hpb-hmenu1-idle1" width="140"><FONT face="メイリオ" size="+2"><A href="http://lefty-uncle.sakura.ne.jp/lightbord/light.cgi" target="_blank"><FONT size="+3">掲示板</FONT></A></FONT></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<TABLE border="1">
+  <TBODY>
+    <TR>
+      <TD valign="top" width="819" height="1352"><FONT face="メイリオ"><A name="0">Windows8 備忘録</A><BR>
+      <BR>
+      <A href="#1">(1)Windows8は「買い」か？</A><BR>
+      <A href="#2">(2)メトロ</A><BR>
+      <A href="#3">(3)遭遇した問題点</A><BR>
+      <A href="#4">(4)６４bit版のCUBASEについて浅知恵</A><BR>
+      <BR>
+      <A name="1">(1)</A><BR>
+      lenovo ThinPad E520 をプリインストールのWindows7 Pro 32bit版を使用していました。<BR>
+      CPUは Intel Celeron B810 、購入時のメモリは２ＧＢでした。<BR>
+      購入価格 ￥２６,０００ に ３年延長保証つけて￥３１,０００です、やすっ！<BR>
+      プリインストールＯＳはWIndows7Pro 32bit版。<BR>
+      Windows8がAeroを止めてGUIをシンプルにしたりとか、カーネルやらいろいろチューニングして軽くなったとか記事にあったのでWindows8
+      Enterprize 64bitの９０日体験版をダウンロードして、メモリを４ＧＢを￥１,９８０(やすっ)で<BR>
+      追加して合計６ＧＢにして使ってみました。<BR>
+      体験癌を体験してみて明らかに早くなった気がするのでWindows8Pro アップグレード版をアマゾンで購入してみました。<BR>
+      </FONT>
+      <TABLE border="1">
+        <TBODY>
+          <TR>
+            <TD><FONT face="メイリオ"><IMG src="image1.jpg" width="360" height="348" border="0"></FONT></TD>
+            <TD><FONT face="メイリオ"><IMG src="image2.jpg" width="354" height="344" border="0"></FONT></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      <FONT face="メイリオ"><BR>
+      Windows7 32bit版の時は「FREEMAKE」の動画変換とかは、相当遅かったし、動画編集とかは途中でかたまったり、使い物になりませんでした。<BR>
+      特に思い処理を行あった後のタスクスイッチがと別のアプリ起動がとてつもなく遅く相当イラついて使っていました。<BR>
+      Windows8ではタスクスイッチに時間がかかることは皆無で動作が非常にスムース。<BR>
+      まあ、これはWindows8のチューニングより６４bitOSとメモリ増設による恩恵でしょう。<BR>
+      今までのOSと明らかに違うのはインストールの短さと起動、シャットダウンが相当早くなったことです。<BR>
+      </FONT>
+      <TABLE border="1">
+        <TBODY>
+          <TR>
+            <TD><FONT face="メイリオ">No</FONT></TD>
+            <TD align="center"><FONT face="メイリオ">処理</FONT></TD>
+            <TD align="right"><FONT face="メイリオ">秒</FONT></TD>
+          </TR>
+          <TR>
+            <TD height="20"><FONT face="メイリオ">１</FONT></TD>
+            <TD valign="middle" align="left" height="20"><FONT face="メイリオ">電源オンからスペースニードルの絵が表示されるまで</FONT></TD>
+            <TD align="right" height="20"><FONT face="メイリオ">7</FONT></TD>
+          </TR>
+          <TR>
+            <TD height="28"><FONT face="メイリオ">２</FONT></TD>
+            <TD valign="middle" align="left" height="28"><FONT face="メイリオ">ログインパスワード入力後からディスクトップが表示されるまで</FONT></TD>
+            <TD align="right" height="28"><FONT face="メイリオ">２０</FONT></TD>
+          </TR>
+          <TR>
+            <TD height="28"><FONT face="メイリオ">３</FONT></TD>
+            <TD valign="middle" align="left" height="28"><FONT face="メイリオ">Google Chromeアイコンをクリックしてトップページが表示されるまで</FONT></TD>
+            <TD align="right" height="28"><FONT face="メイリオ">３１</FONT></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      <FONT face="メイリオ"><BR>
+      この様に電源ONから実質的にアプリが利用できるまでの時間はおおよそ１分です。<BR>
+      1分ではサービスは完全に起動しきっておらず多少重く感じますがブラウザなら問題ないレスポンスで動作します。<BR>
+      以下はlenovoのシャットダウンと電源オンからGoogle Chromeが起動するまでのビデオです。<BR>
+      全然関係ないけどNexsus7で撮影してGoogleドライブで取り込みました、USBで接続すりゃすむ話なのにね。<BR>
+      <iframe width="420" height="315" src="http://www.youtube.com/embed/_XahzlT1Xpo" frameborder="0" allowfullscreen></iframe>
+      <BR>
+      <BR>
+      かつてない低価格でマイクロソフト製品としては、それなりに良さが実感できるのでメモリ増設っして６４bit版を選べるなら「買い」でしょう。<BR>
+      <A href="#0">-戻る-</A><BR>
+      <BR>
+      <A name="2">(2)</A><BR>
+      めだまの「Metoro」ですが、ほとんど使っていません。<BR>
+      従来からのディスクトップアプリを使うユーザーには全く不要のインターフェイスです。<BR>
+      主要な拡張子がメトロアプリ（？）に関連つけられていますが、ことごとくディスクトップのアプリに変更です。<BR>
+      Windows8の使いにくさの回避、便利にするたにインストールしたフリーソフトは以下の３つです。<BR>
+      <BR>
+      <A href="http://www.dnki.co.jp/content/view/145/1/" target="_blank">Classic Shell</A><BR>
+      Windows8には「スタートボタン」がありません。<BR>
+      プログラムの起動はメトロの「検索」かディスクトップに張り付けたショートカットになります。<BR>
+      「検索」はそれなりに優秀ですがやはりメンドクサイです。<BR>
+      このアプリを入れるとWindowsXP、７、カスタムのいずれかのデザインのメニューを選ぶことができます。<BR>
+      その他にもやたら沢山の設定があります。<BR>
+      <IFRAME width="420" height="315" src="http://www.youtube.com/embed/5d_1bLuo5hk" frameborder="0" allowfullscreen></IFRAME><BR>
+      <BR>
+      <A href="http://www.gigafree.net/system/registry/skipmetrosuite.html" target="_blank">Skip Metro Suite</A><BR>
+      こいつはいたってシンプル、下のスクリーンショットだけの機能です。<BR>
+      <IMG src="image3.jpg" width="394" height="443" border="0"><BR>
+      <A href="#0">-戻る-</A><BR>
+      <BR>
+      <A name="3">（3）</A><BR>
+      僕の場合はWindowsXP　32bit　→　Windows7Pro　64bit　→　Windows８Pro　64bit　とOSをバージョンアップしたため、64bit
+      OSで動作しないアプリはWindows7時代にふるい落とされました。<BR>
+      でも、動作しなかったアプリはほとんどなかったとはずで、あったとしても代替えのアプリがあるということです。<BR>
+      Windows8でも問題点はweblogで書いた<A href="http://www.lefty-uncle.sakura.ne.jp/blog/2012-11-20/2012-11-20.html" target="_self">「64bit Windows8専用ドライバじゃないとインストール出来ない仕掛け</A>」です。<BR>
+      まともなメーカーでWindows8が発売される前で、比較的新しい周辺機器のデバイスドライバソフトウェアはWDF体躯ぷで書かれているものがありますが、Windows8のデジタル署名とか入ってなかったりで、インストールできません。<BR>
+      手持ちの周辺機器や購入予定の危機はできればメーカーのサポートに電話で確認したほうがよいでしょう。<BR>
+      ウェブの更新はどうしても遅れがちだし、たまに間違いがありますからね。<BR>
+      <A href="#0">-戻る-<BR>
+      </A><BR>
+      <A name="4">（4）</A><BR>
+      CUBASE7が発売されたそうで。<BR>
+      CUBASEはVer.5から64bit版がリリースされているようですね。<BR>
+      オーダーメードPCショップの社員？の「<A href="http://d.hatena.ne.jp/SuperPC_JUNS/20090907/1252279213" target="_blank">JUNSビルダー 山中潤のPC日記</A>」でWindow Vista 64bitでCUBASE5 64bitを動かしてVST Pluginが動作するかテストをしています。<BR>
+      実験結果は「ほぼ問題なし」としています。<BR>
+      VSTがDLLで提供されていることも触れていて64bit版のCUBASEで動作確認するために重要な要素としてとらえているようですね。その点については技術的な事は書かれていませんけど。<BR>
+      <A href="http://ja.wikipedia.org/wiki/%E3%83%AF%E3%83%BC%E3%83%89" target="_blank">解説しますとCPUのワードサイズ</A>が上がるとレジスタとかアドレッシングモードとかプラスアルファで新しい命令セットが追加されたりします。<BR>
+      ですのでコンパイラもそれに合わせたコンパイルをしなきゃいけません。<BR>
+      （余談ですが「一般的なDLL」は単体で起動できないだけで、EXEとほぼ同じと考えてください。）<BR>
+      Microsoft主要ベンダーで発売しているコンパイラでは４biitのアプリ（がコンパイルされたexe）から３２bitぼDLLは直接呼べないんです。<BR>
+      MicrosofはOSのt移行を進めるため「WOW=Windows On Windows」と言うサブシステムを用意しています。<BR>
+      ３２OSで１６のアプリを動かすための「WOW」、６４のOSで３２のアプリを動かす「<A href="http://ja.wikipedia.org/wiki/WOW64" target="_blank">WOW６４</A>」ですね。<BR>
+      記事ではSONARの64bitもテストしていてVSTの実装方法の違いを指摘しています。<BR>
+      面倒なので本文丸写しします、僕は反論あるけどね。<BR>
+      </FONT>
+      <TABLE border="1">
+        <TBODY>
+          <TR>
+            <TD><FONT face="メイリオ"><BR>
+            タスクマネージャーをみるとCUBASE5 はPlugInをいくつ入れてもタスクは変わらないのにSONAR8 では32bitPlugInを入れるたびタスクが一つずつ増えてゆく。<BR>
+            これは単純に考えればCUBASEは32bitVSTのエミュレートを自前で行っているのに対しSONARはWindows標準のWOW64を使用して32bitVSTのエミュレートを行っているということだ。<BR>
+            SONARの32bitVSTをタスクとして切り離すという方法は若干効率が下がったとしてもReWireの様にDAWとPlugInが別のプログラムとして動いているため(詳しくはわからないが)もし32bitPlugInに問題が生じてもホストであるSONARや他のPlugInへの影響を抑えられる。<BR>
+            また独立したプログラムとして動いていれば32bitPlugInであってもそれぞれ4Gbyteまでメモリを使える。<BR>
+            32bitOSでは複数立ち上げれば一つのアプリは1Gbyte程度もメモリを使えなかったのだから64bitOS+大容量メモリというのは必ずしも64bitネイティブでなくても恩恵を得られるということだSONAR8のやり方は少なくとも64bitWindowsを使うには効果が大きい。<BR>
+            もし32bitPluInが各3Gbyteずつメモリを確保できるなら、今までと全く違う形の音楽制作が見えてくる。<BR>
+            ■結論■<BR>
+            64bit DAW は挑戦してみるだけの価値がある。<BR>
+            </FONT></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+      <FONT face="メイリオ">この評価で問題なのは「タスクマネージャー」のタスク本数だけを見ていること。<BR>
+      CUBASEの６４がどうやって３２のVSTをホストしているのか？、テクノロジは不明だが、オーバーヘッドとメモリ消費は当然開発するまえから分かりに分りきっている課題だから、その点はクリアしているだろうと思います。<BR>
+      本来ならこういった点を調査するなら、同じプラグインを使った同じ曲を録音、再生、トラックダウン（知らないのでテキトー）を実施してスレッド数の変動とか、とCPU使用率、メモリの変動を見ないとダメなんですね。<BR>
+      ということで、この記事の評価は鵜呑みにしないほうがよいような気がします。<BR>
+      ６４のCUBASEについてはこのページしか見ていないので、もう少し調査しないといけないなのですけど、いかんせん使った子tのないソフトウェアを想像で話しているので、正確性は自分でも疑問です。<BR>
+      話は変わりますがスタインバーグの「<A href="http://japan.steinberg.net/jp/support/additional_support_pages/cubase_7_known_issues.html" target="_blank">Cubase 7 / Cubase Artist 7 ― 既知の問題と、仕様についてのご注意事項</A>」「<A href="http://japan.steinberg.net/jp/support/additional_support_pages/cubase_7_installation_note.html" target="_blank">Cubase 7 / Cubase Artist 7 のインストールに関する追加次項</A>」にヘビー問題点が書いてあって素人から見ると「ベータ版じゃね？」って思うんですけど...<BR>
+      大昔はね、Windows3.1（知ってますか？）で動かしてたV１６bitアプリ(VB Ver2.0)から、VisualC++Ver4.2で書いた３２bitのDLLを呼び出すことが「正式に」できてたんです、「サンク」と呼ばれるものです。<BR>
+      実際に仕事でも使ったことがあって、データのメモリ上のソートがあまりにも遅いんで、そこだけ切り出して３２bitのDLL化しました。<BR>
+      難儀したなぁ。<BR>
+      <A href="#0">-戻る-</A><BR>
+      <BR>
+      </FONT></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</BODY>
+</HTML>
